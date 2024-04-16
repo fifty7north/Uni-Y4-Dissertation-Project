@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: contract
+instructions: 'What is this job''s type of contract (Full-Time, Part-Time, etc.)'
+name: 'Job Contract Type'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: N/A
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

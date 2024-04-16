@@ -1,0 +1,140 @@
+color: null
+fieldLayouts:
+  552cce8a-575f-47eb-a8d3-27b850252021:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5a3f749e-34f5-4fc9-a8e5-a1dae0fbcf1e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f146f95-ab81-4766-a075-635a21dd4ad4 # Job Contract Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa76e20d-430b-4da6-92de-b45be43e9fe0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fff31d1d-dbaf-41f0-8f31-36186988bb64 # Job Location
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1df07a65-e459-474b-a5f5-ba4546464980
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 16f5a7be-1e68-4bbb-9b9d-7ce29c39bd24 # Job Salary
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 532bf890-986d-4d3a-a672-e0ec479892c4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dbcdaa17-4f64-44de-961b-3b9fe310d7b1 # Job Employer
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 850f5581-119e-4630-8a7f-e8c06f9f8eda
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a0533430-d17b-4d64-86a4-0cb6be15960b # Job Closing Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31ea3368-82a4-42da-bcb8-8a1c16f6ec93
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 65a72e1a-e99f-46f6-90d7-c40cd610f9c7 # Job Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ef821db-f654-453a-8eb9-de619a7a8acb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c9a1cbae-f9b8-4a13-9422-013e1b2d76d8
+        userCondition: null
+handle: job
+hasTitleField: true
+icon: person-digging
+name: Job
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

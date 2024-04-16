@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8a9ea15a-9c9f-472d-b05d-77435c96a315 # Job
+handle: jobsList
+maxAuthors: 1
+name: 'Jobs List'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: jobs/_entry
+    uriFormat: 'jobs/{slug}'
+type: channel

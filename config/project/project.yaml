@@ -1,4 +1,4 @@
-dateModified: 1713269342
+dateModified: 1713301477
 email:
   fromEmail: 14022526@uhi.ac.uk
   fromName: dyw-moray
@@ -13,10 +13,20 @@ fs:
     url: '@web/uploads/images'
 meta:
   __names__:
+    3f146f95-ab81-4766-a075-635a21dd4ad4: 'Job Contract Type' # Job Contract Type
+    8a9ea15a-9c9f-472d-b05d-77435c96a315: Job # Job
+    16f5a7be-1e68-4bbb-9b9d-7ce29c39bd24: 'Job Salary' # Job Salary
+    65a72e1a-e99f-46f6-90d7-c40cd610f9c7: 'Job Description' # Job Description
+    345f52e6-3487-4fca-8f44-f58f33b2f978: 'Jobs List' # Jobs List
     478a5207-7a2a-491c-bffa-817b075ad09a: Home # Home
+    8258f6ca-2e66-4817-a2fb-f5ce2ab2f8c9: Jobs # Jobs
     13762a63-bef5-426a-890e-95ab817bc6e1: dyw-moray # dyw-moray
     9261989a-cfbe-4cb6-8f48-5e822c3eb651: dyw-moray # dyw-moray
+    a0533430-d17b-4d64-86a4-0cb6be15960b: 'Job Closing Date' # Job Closing Date
     cd3e98a3-25dd-4cdc-8cee-62277f379922: Home # Home
+    ced1bd44-e406-4a14-8953-8231eced863d: Jobs # Jobs
+    dbcdaa17-4f64-44de-961b-3b9fe310d7b1: 'Job Employer' # Job Employer
+    fff31d1d-dbaf-41f0-8f31-36186988bb64: 'Job Location' # Job Location
 system:
   edition: solo
   live: true

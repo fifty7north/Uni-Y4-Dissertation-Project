@@ -76,11 +76,12 @@
 }
 
 .homepage-signpost {
-    background-color: var(--lightGrey);
+    background-color: #f4f4f4;
     border-radius: 1rem;
     color: inherit;
     display: flex;
     flex-direction: column;
+    height: 100%;
     text-decoration: none;
 
     img {
@@ -132,6 +133,74 @@
 
         #signposts-container {
             gap: 4rem;
+        }
+    }
+}
+
+/* Stats Section: Mobile */
+#stats-section {
+    margin: 10vh auto 0 auto;
+    width: fit-content;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: fit-content;
+
+    div,
+    p {
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    div {
+        font-size: 4.770rem;
+    }
+
+    p {
+        transform: translateY(-1em);
+    }
+}
+
+/* Stats Section: Tablet and Desktop */
+@media screen and (min-width: 768px) {
+    .stat {
+
+        p {
+            align-self: flex-end;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+/* Get in Touch Section: Mobile */
+#get-in-touch-section {
+    margin-top: 10vh;
+    padding: 0 12.5%;
+
+    h2 {
+        text-align: center;
+    }
+
+    #get-in-touch-container {
+        align-items: center;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Signposts Section: Tablet and Desktop */
+@media screen and (min-width: 769px) {
+    #get-in-touch-section {
+
+        #get-in-touch-container {
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0 auto 0 auto;
+            width: fit-content;
         }
     }
 }

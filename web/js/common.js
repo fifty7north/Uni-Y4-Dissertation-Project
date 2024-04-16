@@ -13,13 +13,10 @@ addEventListener("resize", () => {
 });
 
 /* Fade In Animation */
-addEventListener("scroll", () => {
-  let viewportWidth = window.innerWidth;
-  let viewportHeight = window.innerHeight;
+function fadeInAnimation() {
   document.querySelectorAll(".fade-in-animation").forEach((element) => {
     let fadePosition =
-      (element.getBoundingClientRect().y +
-        element.getBoundingClientRect().y +
+      (2 * element.getBoundingClientRect().y +
         element.getBoundingClientRect().height) /
       2;
     if (deviceLayout == "mobileLayout") {
@@ -34,4 +31,8 @@ addEventListener("scroll", () => {
       }
     }
   });
+}
+fadeInAnimation();
+addEventListener("scroll", () => {
+    fadeInAnimation();
 });
