@@ -1,0 +1,137 @@
+/* Hero Section: Mobile */
+#hero-section {
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    gap: 3.053rem;
+    padding: 12.5vh 12.5% 0 12.5%;
+    position: relative;
+    width: 75%;
+
+    #hero-section-text {
+        h1 {
+            color: var(--white);
+        }
+
+        #hero-buttons {
+            display: flex;
+            gap: 2em;
+        }
+    }
+
+    #hero-section-image {
+        display: flex;
+        height: fit-content;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/* Hero Section: Tablet & Desktop */
+@media screen and (min-width: 769px) {
+
+    #hero-section {
+        align-items: center;
+        flex-direction: row;
+        margin-top: 80px;
+        padding: 10vh 0 0 0;
+        width: 100%;
+
+        #hero-section-text {
+            flex: 1;
+
+            h1 {
+                font-size: 3.053rem;
+                margin-left: 25%;
+            }
+
+            #hero-buttons {
+                margin: 0 0 3.5rem 25%;
+            }
+        }
+
+        #hero-section-image {
+            align-self: flex-end;
+            flex: 1;
+        }
+    }
+}
+
+/* Signposts Section: Mobile */
+#signposts-section {
+    margin-top: 10vh;
+    padding: 0 12.5%;
+
+    h2 {
+        text-align: center;
+    }
+
+    #signposts-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+.homepage-signpost {
+    background-color: var(--lightGrey);
+    border-radius: 1rem;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    img {
+        margin: 2rem auto 1rem auto;
+        max-width: 64px;
+        padding: 0.5em;
+        width: 25%;
+        transition: all 0.5s;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .signpost-image-hover {
+        max-width: calc(64px + 1em);
+        padding: 0;
+        width: calc(25% + 1em);
+    }
+
+    h3 {
+        margin: 0 auto 0 auto;
+        text-align: center;
+        width: fit-content;
+        z-index: 1;
+    }
+
+    p {
+        margin: 1rem 2rem 2rem 2rem;
+        text-align: justify;
+    }
+}
+
+/* Signposts Section: Tablet and Desktop */
+@media screen and (min-width: 577px) {
+    #signposts-section {
+
+        #signposts-container {
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto 0 auto;
+            width: fit-content;
+        }
+    }
+
+    .homepage-signpost {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #signposts-section {
+
+        #signposts-container {
+            gap: 4rem;
+        }
+    }
+}

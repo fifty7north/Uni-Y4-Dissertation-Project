@@ -5,8 +5,9 @@
 		<title>{{ siteName }}</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-		{% do craft.app.view.registerCssFile('@web/style.css') %}
-		{% do craft.app.view.registerCssFile('@web/home.css') %}
+		{% do craft.app.view.registerCssFile('@web/css/style.css') %}
+		{% do craft.app.view.registerJsFile('@web/js/common.js') %}
+
 	</head>
 	<body>
 		<header>
@@ -25,5 +26,15 @@
 		{# Templates inserted here #}
 		{% endblock %}
 
+		<footer>
+			<h5>email: info@dywmoray.co.uk</h5>
+			<h5>
+				UHI Moray<br>
+				Moray Street<br>
+				Elgin<br>
+				IV30 1JJ
+			</h5>
+			<a href="https://www.flaticon.com/free-icons/work" title="work icons">Icons created by Freepik - Flaticon</a>
+		</footer>
 	</body>
 </html>
