@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: dyw-moray
+primary: true
+siteGroup: 9261989a-cfbe-4cb6-8f48-5e822c3eb651 # dyw-moray
+sortOrder: 1

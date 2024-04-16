@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Colours */
+:root {
+    --black: #000000;
+    --darkGrey: #959595;
+    --lightGrey: #D9D9D9;
+    --white: #FFFFFF;
+    --darkBlue: #142B54;
+    --lightBlue: #71A4CF;
+    --accentBlue: #6CC4DA;
+    --accentYellow: #F7C01B;
+    --accentPink: #C8ABBA;
+    --accentGreen: #9BD49B;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+
+body {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+html {
+    font-size: 75%;
+}
+
+@media screen and (min-width: 1025px) {
+
+html {
+        font-size: 100%;
+    }
+}
+
+/* 16px */
+
+h1 {
+    font-size: 3.053rem;
+    /* 48.8px */
+}
+
+h2 {
+    font-size: 2.442rem;
+    /* 39.04px */
+}
+
+h3 {
+    font-size: 1.954rem;
+    /* 31.2px */
+}
+
+h4 {
+    font-size: 1.563rem;
+    /* 24.96px */
+}
+
+h5 {
+    font-size: 1.250rem;
+    /* 20px */
+}
+
+small {
+    font-size: 0.750rem;
+    /* 12px */
+}
+
+/* Header: Mobile*/
+header {
+    background-color: var(--white);
+    border-top: 1px solid var(--lightGrey);
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+    #home-button {
+        padding: 20px;
+    }
+
+    #home-button:hover {
+        cursor: pointer;
+    }
+
+    #header-links-desktop {
+        display: none;
+    }
+
+    a {
+        color: var(--darkBlue);
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+/* Header: Desktop */
+@media screen and (min-width: 769px) {
+
+header {
+    border-bottom: 1px solid var(--lightGrey);
+    border-top: 0;
+    bottom: auto;
+    top: 0;
+
+    #header-links-desktop {
+        align-items: center;
+        display: flex;
+        gap: 2em;
+    }
+}
+
+}
+
+/* Buttons */
+.button {
+    display: flex;
+    position: relative;
+    width: fit-content;
+
+    .button-main,
+    .button-accent-1,
+    .button-accent-2 {
+        border-radius: 1em;
+        height: 100%;
+        padding: 1em;
+        transition: all 0.25s;
+        width: 100%;
+    }
+
+    .button-main {
+        font-weight: 700;
+        height: fit-content;
+        position: relative;
+        text-wrap: nowrap;
+        z-index: 2;
+    }
+
+    .button-accent-1 {
+        background-color: var(--accentPink);
+        padding: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .button-accent-2 {
+        background-color: var(--accentBlue);
+        padding: 0;
+        position: absolute;
+        z-index: 0;
+    }
+}
+
+.button:hover {
+    cursor: pointer;
+
+    .button-accent-1 {
+        transform: translate(0.4em, 0.4em);
+    }
+
+    .button-accent-2 {
+        transform: translate(0.8em, 0.8em);
+    }
+}
+
+.primary-button {
+    background-color: var(--accentYellow);
+}
+
+.secondary-button {
+    background-color: var(--lightGrey);
+}
