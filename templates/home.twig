@@ -2,7 +2,6 @@
 {% do craft.app.view.registerCssFile('@web/css/home.css') %}
 {% do craft.app.view.registerJsFile('@web/js/home.js') %}
 {% block content %}
-
 <section id="hero-section">
 	<div id="hero-section-text">
 		<h1>
@@ -26,7 +25,7 @@
 		</div>
 	</div>
 	<div id="hero-section-image">
-		<img src="{{siteUrl}}static/images/hero-image.png" alt="">
+		<img src="{{siteUrl}}static/images/home-hero-image.svg" alt="">
 	</div>
 </section>
 <section id="signposts-section">
@@ -68,7 +67,78 @@
 		<p>Work inspiration activities delivered to young people</p>
 	</div>
 </section>
-
+<section id="latest-jobs-section">
+	<h1>Latest Jobs</h1>
+	<div id="latest-jobs-cards-container">
+		{% set latestJobs = craft.entries.section("jobs").all()%}
+		<div class="job-card fade-in-animation">
+			<h5>{{latestJobs[0].title}}</h5>
+			<div class="job-card-details">
+				<small><span>Contract: </span>{{latestJobs[0].jobContract}}</small>
+				<small><span>Salary: </span>{{latestJobs[0].jobSalary}}</small>
+				<small><span>Employer: </span>{{latestJobs[0].jobEmployer}}</small>
+				<small><span>Location: </span>{{latestJobs[0].jobLocation}}</small>
+				<small><span>Closing Date: </span>{{latestJobs[0].jobClosingDate|date}}</small>
+			</div>
+			<div class="job-card-buttons">
+				<div class="button">
+					<a href="{{latestJobs[0].jobApplicationLink}}" class="button-main primary-button">Apply Now</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+				<div class="button">
+					<a href="{{siteUrl}}jobs" class="button-main secondary-button job-card-description-button">View on Jobs Page</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="job-card fade-in-animation">
+			<h5>{{latestJobs[1].title}}</h5>
+			<div class="job-card-details">
+				<small><span>Contract: </span>{{latestJobs[1].jobContract}}</small>
+				<small><span>Salary: </span>{{latestJobs[1].jobSalary}}</small>
+				<small><span>Employer: </span>{{latestJobs[1].jobEmployer}}</small>
+				<small><span>Location: </span>{{latestJobs[1].jobLocation}}</small>
+				<small><span>Closing Date: </span>{{latestJobs[1].jobClosingDate|date}}</small>
+			</div>
+			<div class="job-card-buttons">
+				<div class="button">
+					<a href="{{latestJobs[1].jobApplicationLink}}" class="button-main primary-button">Apply Now</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+				<div class="button">
+					<a href="{{siteUrl}}jobs" class="button-main secondary-button job-card-description-button">View on Jobs Page</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="job-card fade-in-animation">
+			<h5>{{latestJobs[2].title}}</h5>
+			<div class="job-card-details">
+				<small><span>Contract: </span>{{latestJobs[2].jobContract}}</small>
+				<small><span>Salary: </span>{{latestJobs[2].jobSalary}}</small>
+				<small><span>Employer: </span>{{latestJobs[2].jobEmployer}}</small>
+				<small><span>Location: </span>{{latestJobs[2].jobLocation}}</small>
+				<small><span>Closing Date: </span>{{latestJobs[2].jobClosingDate|date}}</small>
+			</div>
+			<div class="job-card-buttons">
+				<div class="button">
+					<a href="{{latestJobs[2].jobApplicationLink}}" class="button-main primary-button">Apply Now</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+				<div class="button">
+					<a href="{{siteUrl}}jobs" class="button-main secondary-button job-card-description-button">View on Jobs Page</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <section id="get-in-touch-section">
 	<h2>Learn more and get in touch</h2>
 	<div id="get-in-touch-container">
@@ -91,7 +161,5 @@
 		</a>
 	</div>
 </section>
-
-
 {% endblock %}
 

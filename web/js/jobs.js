@@ -1,9 +1,9 @@
 /* Rotating Hero Image */
 const heroImages = [
-  "jobs-hero-home.png",
-  "jobs-hero-plants.png",
-  "jobs-hero-whiteboard.png",
-  "jobs-hero-wireframe.png",
+  "jobs-hero-home.svg",
+  "jobs-hero-plants.svg",
+  "jobs-hero-whiteboard.svg",
+  "jobs-hero-wireframe.svg",
 ];
 var heroCounter = 0;
 setInterval(() => {
@@ -21,9 +21,9 @@ document.querySelectorAll(".job-card").forEach((card) => {
   descriptionButton.addEventListener("click", () => {
     card.classList.toggle("job-card-expanded");
     if (card.classList.contains("job-card-expanded")) {
-      descriptionButton.innerHTML = "Read Less";
+      descriptionButton.innerHTML = "View Less";
     } else {
-      descriptionButton.innerHTML = "Read More";
+      descriptionButton.innerHTML = "View More";
     }
   });
 });
