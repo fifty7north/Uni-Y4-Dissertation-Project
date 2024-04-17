@@ -1,4 +1,4 @@
-dateModified: 1713301477
+dateModified: 1713381481
 email:
   fromEmail: 14022526@uhi.ac.uk
   fromName: dyw-moray
@@ -17,15 +17,20 @@ meta:
     8a9ea15a-9c9f-472d-b05d-77435c96a315: Job # Job
     16f5a7be-1e68-4bbb-9b9d-7ce29c39bd24: 'Job Salary' # Job Salary
     65a72e1a-e99f-46f6-90d7-c40cd610f9c7: 'Job Description' # Job Description
-    345f52e6-3487-4fca-8f44-f58f33b2f978: 'Jobs List' # Jobs List
+    85c98157-bafd-409e-9a69-4128f398c4de: 'Job Logo' # Job Logo
+    345f52e6-3487-4fca-8f44-f58f33b2f978: Jobs # Jobs
     478a5207-7a2a-491c-bffa-817b075ad09a: Home # Home
+    684be2c0-9073-4570-bd1f-e07b9a5481dc: Photos # Photos
+    768f1fcd-036a-43cf-9749-379c31a599c7: 'YPG Job Guarantee' # YPG Job Guarantee
+    3805d8aa-aca2-44ba-9f15-4acc9355c63f: 'Job Email' # Job Email
     8258f6ca-2e66-4817-a2fb-f5ce2ab2f8c9: Jobs # Jobs
     13762a63-bef5-426a-890e-95ab817bc6e1: dyw-moray # dyw-moray
     9261989a-cfbe-4cb6-8f48-5e822c3eb651: dyw-moray # dyw-moray
     a0533430-d17b-4d64-86a4-0cb6be15960b: 'Job Closing Date' # Job Closing Date
     cd3e98a3-25dd-4cdc-8cee-62277f379922: Home # Home
-    ced1bd44-e406-4a14-8953-8231eced863d: Jobs # Jobs
     dbcdaa17-4f64-44de-961b-3b9fe310d7b1: 'Job Employer' # Job Employer
+    eab664f3-4c66-4834-ad22-2d4fd4a76bb0: 'Job Application Link' # Job Application Link
+    fce3f1e0-43a1-420a-950a-13a7790804e8: Text # Text
     fff31d1d-dbaf-41f0-8f31-36186988bb64: 'Job Location' # Job Location
 system:
   edition: solo

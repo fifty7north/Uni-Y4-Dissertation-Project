@@ -1,0 +1,13 @@
+columnSuffix: null
+handle: jobApplicationLink
+instructions: 'Enter the contact details for the application (website link or email address)'
+name: 'Job Application Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+    - email
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

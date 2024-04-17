@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: ypgJobGuarantee
+instructions: YPG
+name: 'YPG Job Guarantee'
+searchable: false
+settings:
+  default: false
+  offLabel: 'YPG No'
+  onLabel: 'YPG Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

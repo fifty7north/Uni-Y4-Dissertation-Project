@@ -1,0 +1,154 @@
+/* Jobs Hero Section: Mobile */
+#jobs-hero {
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    gap: 3.053em;
+    justify-content: space-between;
+    min-height: 50vh;
+    padding: 80px 12.5% 0 12.5%;
+
+    #jobs-hero-text,
+    #jobs-hero-image-container {
+        height: fit-content;
+        width: 100%;
+    }
+
+    #jobs-hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        text-align: justify;
+
+        h1,
+        p {
+            color: var(--white);
+            margin: 0;
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Jobs Hero Section: Tablet and Desktop */
+@media screen and (min-width: 769px) {
+
+    #jobs-hero {
+        align-items: center;
+        flex-direction: row;
+        padding-top: 80px;
+
+        #jobs-hero-text,
+        #jobs-hero-image-container {
+            width: 50%;
+        }
+
+        #jobs-hero-image-container {
+            align-self: flex-end;
+        }
+    }
+
+
+}
+
+/* Jobs List Section: Mobile */
+#jobs-list {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 100%;
+    padding: 10vh 12.5% 0 12.5%;
+}
+
+.job-card {
+    background-color: var(--lightGrey);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+
+    h5 {
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .job-card-details {
+        margin: 1em 0;
+    }
+
+    small {
+        display: block;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    .job-card-description {
+        display: none;
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+
+    .job-card-buttons {
+        display: flex;
+        gap: 1em;
+        justify-self: flex-end;
+
+        .button-main,
+        .button-accent-1,
+        .button-accent-2 {
+            border-radius: 0.75em;
+            font-size: 0.75em;
+        }
+
+        .button:hover {
+            .button-accent-1 {
+                transform: translate(0.25em, 0.25em);
+            }
+
+            .button-accent-2 {
+                transform: translate(0.5em, 0.5em);
+            }
+        }
+    }
+}
+
+.job-card-expanded {
+    h5 {
+        white-space: wrap;
+    }
+
+    .job-card-description {
+        display: block;
+    }
+}
+
+/* Jobs List Section: Tablet */
+@media screen and (min-width: 577px) {
+    #jobs-list {
+        grid-template-columns: 50% 50%;
+    }
+
+    .job-card-expanded {
+        grid-column: 1 / span 2;
+        max-width: none;
+    }
+}
+
+/* Jobs List Section: Desktop */
+@media screen and (min-width: 1025px) {
+    #jobs-list {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .job-card-expanded {
+        grid-column: 1 / span 3;
+    }
+}

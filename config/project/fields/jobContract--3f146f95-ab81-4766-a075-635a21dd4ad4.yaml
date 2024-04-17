@@ -1,5 +1,5 @@
 columnSuffix: null
-handle: contract
+handle: jobContract
 instructions: 'What is this job''s type of contract (Full-Time, Part-Time, etc.)'
 name: 'Job Contract Type'
 searchable: false

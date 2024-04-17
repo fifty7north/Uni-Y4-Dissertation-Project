@@ -36,31 +36,46 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 85c98157-bafd-409e-9a69-4128f398c4de # Job Logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 63756006-0605-4c47-b441-3c10fc12ba27
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 768f1fcd-036a-43cf-9749-379c31a599c7 # YPG Job Guarantee
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4bb4eccf-9837-4c49-b163-ff9ac5529ff6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 3f146f95-ab81-4766-a075-635a21dd4ad4 # Job Contract Type
             handle: null
             includeInCards: false
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: aa76e20d-430b-4da6-92de-b45be43e9fe0
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: fff31d1d-dbaf-41f0-8f31-36186988bb64 # Job Location
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 1df07a65-e459-474b-a5f5-ba4546464980
             userCondition: null
             warning: null
             width: 100
@@ -72,7 +87,7 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 532bf890-986d-4d3a-a672-e0ec479892c4
@@ -87,10 +102,25 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 850f5581-119e-4630-8a7f-e8c06f9f8eda
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fff31d1d-dbaf-41f0-8f31-36186988bb64 # Job Location
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1df07a65-e459-474b-a5f5-ba4546464980
             userCondition: null
             warning: null
             width: 100
@@ -102,7 +132,7 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 31ea3368-82a4-42da-bcb8-8a1c16f6ec93
@@ -117,10 +147,25 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 2ef821db-f654-453a-8eb9-de619a7a8acb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: eab664f3-4c66-4834-ad22-2d4fd4a76bb0 # Job Application Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e7582c8-d425-4412-8c66-94c229549df2
             userCondition: null
             warning: null
             width: 100
@@ -131,7 +176,7 @@ handle: job
 hasTitleField: true
 icon: person-digging
 name: Job
-showSlugField: true
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -7,7 +11,8 @@ body {
 :root {
     --black: #000000;
     --darkGrey: #959595;
-    --lightGrey: #D9D9D9;
+    --midGrey: #D9D9D9;
+    --lightGrey: #F4F4F4;
     --white: #FFFFFF;
     --darkBlue: #142B54;
     --lightBlue: #71A4CF;
@@ -80,7 +85,7 @@ small {
 /* Header: Mobile */
 header {
     background-color: var(--white);
-    border-top: 1px solid var(--lightGrey);
+    border-top: 1px solid var(--midGrey);
     bottom: 0;
     box-sizing: border-box;
     display: flex;
@@ -92,7 +97,12 @@ header {
     z-index: 99;
 
     #home-button {
+        height: 40px;
         padding: 20px 0px;
+
+        img {
+            height: 100%;
+        }
     }
 
     #home-button:hover {
@@ -114,7 +124,7 @@ header {
 /* Header: Tablet */
 @media screen and (min-width: 769px) {
     header {
-        border-bottom: 1px solid var(--lightGrey);
+        border-bottom: 1px solid var(--midGrey);
         border-top: 0;
         bottom: auto;
         padding: 0 12.5%;
@@ -138,6 +148,7 @@ header {
 /* Footer: Mobile */
 footer {
     background-color: var(--darkBlue);
+    margin-top: 10vh;
     padding-bottom: 80px;
 
     h5 {
@@ -170,9 +181,11 @@ footer {
     }
 
     .button-main {
+        color: inherit;
         font-weight: 700;
         height: fit-content;
         position: relative;
+        text-decoration: none;
         text-wrap: nowrap;
         z-index: 2;
     }
@@ -209,7 +222,7 @@ footer {
 }
 
 .secondary-button {
-    background-color: var(--lightGrey);
+    background-color: var(--midGrey);
 }
 
 /* Fade In Animation */

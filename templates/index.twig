@@ -2,7 +2,7 @@
 <html lang="{{ craft.app.language }}">
 	<head>
 		<meta charset="utf-8"/>
-		<title>{{ siteName }}</title>
+		<title>{{siteName}}</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 		{% do craft.app.view.registerCssFile('@web/css/style.css') %}
@@ -11,13 +11,15 @@
 	</head>
 	<body>
 		<header>
-		<img src="{{siteUrl}}/static/images/thumbnail_DYW_Moray_CMYK.png" alt="Home Button/DYW Logo" href="" id="home-button"></img>
+		<a href="{{siteUrl}}" id="home-button">
+			<img src="{{siteUrl}}/static/images/thumbnail_DYW_Moray_CMYK.png" alt="{{siteName}}"></img>
+		</a>
 		<div id="header-links-desktop">
 			<a href="">Employers</a>
 			<a href="">Educators</a>
 			<a href="">Young People & Parents</a>
-			<a href="">Jobs</a>
-			<a href="">Blog</a>
+			<a href="{{siteUrl}}jobs">Jobs</a>
+			<a href="">Events</a>
 			<a href="">About Us</a>
 		</div>
 		</header>

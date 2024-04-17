@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 8258f6ca-2e66-4817-a2fb-f5ce2ab2f8c9 # Jobs
+  - 8a9ea15a-9c9f-472d-b05d-77435c96a315 # Job
 handle: jobs
 maxAuthors: 1
 name: Jobs
@@ -22,6 +22,6 @@ siteSettings:
   13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
     enabledByDefault: true
     hasUrls: true
-    template: job-page/_entry
-    uriFormat: job-page
-type: single
+    template: jobs/_entry
+    uriFormat: 'jobs/{slug}'
+type: channel

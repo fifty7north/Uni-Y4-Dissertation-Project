@@ -76,7 +76,7 @@
 }
 
 .homepage-signpost {
-    background-color: #f4f4f4;
+    background-color: var(--lightGrey);
     border-radius: 1rem;
     color: inherit;
     display: flex;
