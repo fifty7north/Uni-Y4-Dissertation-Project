@@ -14,7 +14,7 @@
 <section id="jobs-list">
     {% set jobs = craft.entries.section("jobs").all() %}
     {% for job in jobs %}
-        <div class="job-card">
+        <div class="job-card fade-in-animation">
             <h5>{{job.title}}</h5>
             <div class="job-card-details">
                 <small><span>Contract: </span>{{job.jobContract}}</small>
