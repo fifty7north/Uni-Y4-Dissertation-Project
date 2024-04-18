@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: text
-instructions: 'Insert text here'
-name: Text
+handle: eventDescription
+instructions: "Enter the description of the event.\r\nThis can be over multiple lines of text."
+name: 'Event Description'
 searchable: false
 settings:
   byteLimit: null
@@ -9,7 +9,7 @@ settings:
   code: false
   initialRows: 1
   multiline: true
-  placeholder: null
+  placeholder: Description
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

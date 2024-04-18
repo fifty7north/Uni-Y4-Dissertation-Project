@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: jobClosingDate
-instructions: 'What is the closing date for job applications?'
+instructions: 'Select the closing date for job applications'
 name: 'Job Closing Date'
 searchable: false
 settings:

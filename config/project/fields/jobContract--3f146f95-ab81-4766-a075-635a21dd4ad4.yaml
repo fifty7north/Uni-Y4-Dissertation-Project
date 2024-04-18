@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: jobContract
-instructions: 'What is this job''s type of contract (Full-Time, Part-Time, etc.)'
+instructions: 'Enter the job''s contract type (Full-Time, Part-Time, etc.)'
 name: 'Job Contract Type'
 searchable: false
 settings:
@@ -9,7 +9,7 @@ settings:
   code: false
   initialRows: 4
   multiline: false
-  placeholder: N/A
+  placeholder: Contract
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

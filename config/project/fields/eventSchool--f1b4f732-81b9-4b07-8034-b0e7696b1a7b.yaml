@@ -1,0 +1,120 @@
+columnSuffix: null
+handle: eventSchool
+instructions: 'Select the school area the event is taking place at.'
+name: 'Event School'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - All
+        -
+          - value
+          - all
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'UHI Moray'
+        -
+          - value
+          - uhiMoray
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Buckie High School'
+        -
+          - value
+          - buckieHighSchool
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Elgin Academy'
+        -
+          - value
+          - elginAcademy
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Elgin High School'
+        -
+          - value
+          - elginHighSchool
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Forres Academy'
+        -
+          - value
+          - forresAcademy
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Keith Grammar School'
+        -
+          - value
+          - keithGrammarSchool
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Lossiemouth High School'
+        -
+          - value
+          - lossiemouthHighSchool
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Milnes High School'
+        -
+          - value
+          - milnesHighSchool
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Speyside High School'
+        -
+          - value
+          - speysideHighSchool
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

@@ -1,15 +1,15 @@
 columnSuffix: null
 handle: jobDescription
-instructions: 'Describe the details of the job.'
+instructions: "Describe the details of the job.\r\nThis can be over multiple lines of text."
 name: 'Job Description'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
   code: false
-  initialRows: 3
+  initialRows: 1
   multiline: true
-  placeholder: null
+  placeholder: Description
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

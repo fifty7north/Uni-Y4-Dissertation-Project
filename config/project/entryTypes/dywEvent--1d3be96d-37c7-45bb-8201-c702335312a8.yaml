@@ -1,0 +1,110 @@
+color: blue
+fieldLayouts:
+  5cd4d94f-b94d-478b-84c6-9fce61acce26:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c7bbc9f3-6516-4f76-a26d-b44d1affe206
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45903707-7ecb-4921-9218-da21e15c8878 # Event Start Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b339bf9-e224-4068-a33a-faecc376ebad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fe9247cf-052a-4a9e-835f-4725f296ac1d # Event End Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69bd32c1-458c-4365-add6-6944c94d8f15
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 05629c37-9cba-4fe7-8bdd-1be3c2b2de39 # Event Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cb56a70b-4098-4b49-9e20-19eab37ead9f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 354beafa-235a-4551-8009-cf50ef5d3233 # Event Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bed96773-6e2e-4cd1-bec7-fec3734dee9d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e2f8e14d-1c50-486c-aab9-0bedbab15dc4
+        userCondition: null
+handle: dywEvent
+hasTitleField: true
+icon: calendar
+name: 'DYW Event'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: jobLocation
-instructions: 'Where is the employer located?'
+instructions: 'Enter the job/employer''s address'
 name: 'Job Location'
 searchable: false
 settings:
@@ -9,7 +9,7 @@ settings:
   code: false
   initialRows: 4
   multiline: false
-  placeholder: null
+  placeholder: Location
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

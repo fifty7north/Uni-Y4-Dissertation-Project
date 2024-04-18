@@ -130,6 +130,15 @@
     }
 }
 
+#job-error {
+    align-items: center;
+    display: flex;
+    grid-column: 1 / span 1;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
 /* Jobs List Section: Tablet */
 @media screen and (min-width: 577px) {
     #jobs-list {
@@ -140,6 +149,10 @@
         grid-column: 1 / span 2;
         max-width: none;
     }
+
+    #job-error {
+        grid-column: 1 / span 2;
+    }
 }
 
 /* Jobs List Section: Desktop */
@@ -149,6 +162,10 @@
     }
 
     .job-card-expanded {
+        grid-column: 1 / span 3;
+    }
+
+    #job-error {
         grid-column: 1 / span 3;
     }
 }

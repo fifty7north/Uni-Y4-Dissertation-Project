@@ -1,4 +1,4 @@
-dateModified: 1713381481
+dateModified: 1713442690
 email:
   fromEmail: 14022526@uhi.ac.uk
   fromName: dyw-moray
@@ -13,24 +13,29 @@ fs:
     url: '@web/uploads/images'
 meta:
   __names__:
+    1d3be96d-37c7-45bb-8201-c702335312a8: 'DYW Event' # DYW Event
     3f146f95-ab81-4766-a075-635a21dd4ad4: 'Job Contract Type' # Job Contract Type
+    4bb70002-661b-4e95-92d2-8081dc9ae950: 'School Events' # School Events
     8a9ea15a-9c9f-472d-b05d-77435c96a315: Job # Job
     16f5a7be-1e68-4bbb-9b9d-7ce29c39bd24: 'Job Salary' # Job Salary
+    028b1118-ba6d-41fb-b83d-f7bed7b8974f: 'School Event' # School Event
     65a72e1a-e99f-46f6-90d7-c40cd610f9c7: 'Job Description' # Job Description
     85c98157-bafd-409e-9a69-4128f398c4de: 'Job Logo' # Job Logo
     345f52e6-3487-4fca-8f44-f58f33b2f978: Jobs # Jobs
+    354beafa-235a-4551-8009-cf50ef5d3233: 'Event Link' # Event Link
     478a5207-7a2a-491c-bffa-817b075ad09a: Home # Home
-    684be2c0-9073-4570-bd1f-e07b9a5481dc: Photos # Photos
     768f1fcd-036a-43cf-9749-379c31a599c7: 'YPG Job Guarantee' # YPG Job Guarantee
-    3805d8aa-aca2-44ba-9f15-4acc9355c63f: 'Job Email' # Job Email
-    8258f6ca-2e66-4817-a2fb-f5ce2ab2f8c9: Jobs # Jobs
+    05629c37-9cba-4fe7-8bdd-1be3c2b2de39: 'Event Description' # Event Description
     13762a63-bef5-426a-890e-95ab817bc6e1: dyw-moray # dyw-moray
+    55304e69-65f2-49fb-83e7-5c036bda33aa: 'DYW Events' # DYW Events
     9261989a-cfbe-4cb6-8f48-5e822c3eb651: dyw-moray # dyw-moray
+    45903707-7ecb-4921-9218-da21e15c8878: 'Event Start Date' # Event Start Date
     a0533430-d17b-4d64-86a4-0cb6be15960b: 'Job Closing Date' # Job Closing Date
     cd3e98a3-25dd-4cdc-8cee-62277f379922: Home # Home
     dbcdaa17-4f64-44de-961b-3b9fe310d7b1: 'Job Employer' # Job Employer
-    eab664f3-4c66-4834-ad22-2d4fd4a76bb0: 'Job Application Link' # Job Application Link
-    fce3f1e0-43a1-420a-950a-13a7790804e8: Text # Text
+    eab664f3-4c66-4834-ad22-2d4fd4a76bb0: 'Job Link' # Job Link
+    f1b4f732-81b9-4b07-8034-b0e7696b1a7b: 'Event School' # Event School
+    fe9247cf-052a-4a9e-835f-4725f296ac1d: 'Event End Date' # Event End Date
     fff31d1d-dbaf-41f0-8f31-36186988bb64: 'Job Location' # Job Location
 system:
   edition: solo

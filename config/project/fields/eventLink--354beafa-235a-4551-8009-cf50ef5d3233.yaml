@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: jobApplicationLink
-instructions: 'Enter the contact details for the application (website link or email address)'
-name: 'Job Application Link'
+handle: eventLink
+instructions: 'Enter the web link or email used to request info/register for the event.'
+name: 'Event Link'
 searchable: false
 settings:
   maxLength: 255

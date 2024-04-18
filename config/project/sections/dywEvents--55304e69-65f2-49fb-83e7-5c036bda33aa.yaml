@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 1d3be96d-37c7-45bb-8201-c702335312a8 # DYW Event
+handle: dywEvents
+maxAuthors: 1
+name: 'DYW Events'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: dyw-events/_entry
+    uriFormat: 'dyw-events/{slug}'
+type: channel

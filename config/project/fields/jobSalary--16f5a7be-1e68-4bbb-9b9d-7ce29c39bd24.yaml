@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: jobSalary
-instructions: 'What is the salary/rate of the job? Include either per hour or PA.'
+instructions: 'Enter the salary of the job, including rate of pay (per hour, per year, etc.).'
 name: 'Job Salary'
 searchable: false
 settings:

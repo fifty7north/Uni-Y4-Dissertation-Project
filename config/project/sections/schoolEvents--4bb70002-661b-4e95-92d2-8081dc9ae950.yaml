@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 028b1118-ba6d-41fb-b83d-f7bed7b8974f # School Event
+handle: schoolEvents
+maxAuthors: 1
+name: 'School Events'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: school-events/_entry
+    uriFormat: 'school-events/{slug}'
+type: channel

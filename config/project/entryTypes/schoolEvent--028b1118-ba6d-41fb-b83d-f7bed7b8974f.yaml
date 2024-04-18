@@ -1,0 +1,125 @@
+color: yellow
+fieldLayouts:
+  eeb7c242-e894-4d52-a4bd-2e0cf1708570:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c2409de8-3921-46a0-b4b3-c678dd40ab2e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45903707-7ecb-4921-9218-da21e15c8878 # Event Start Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68696deb-7914-41bd-87f9-c33fb70995ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fe9247cf-052a-4a9e-835f-4725f296ac1d # Event End Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a010183-4d8f-4125-bc8c-28fdf43630c2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f1b4f732-81b9-4b07-8034-b0e7696b1a7b # Event School
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5554e591-808e-4f58-9318-6b090d74c94e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 05629c37-9cba-4fe7-8bdd-1be3c2b2de39 # Event Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f48ad20f-4d74-47b0-a866-865041543b6a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 354beafa-235a-4551-8009-cf50ef5d3233 # Event Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6ac559ae-3ea1-4786-b4c2-db3b561b4bcf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6e964109-dbbc-41e7-80a4-3fa3a39b96e1
+        userCondition: null
+handle: schoolEvent
+hasTitleField: true
+icon: backpack
+name: 'School Event'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
