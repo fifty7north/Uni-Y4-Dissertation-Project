@@ -1,3 +1,11 @@
+/* Hero Buttons */
+document.getElementById("dyw-events-button").addEventListener("click", () => {
+    document.getElementById("dyw-events-section").scrollIntoView();
+});
+document.getElementById("school-events-button").addEventListener("click", () => {
+  document.getElementById("school-events-section").scrollIntoView();
+});
+
 /* Expand Event Card */
 document.querySelectorAll(".event-card").forEach((card) => {
   let descriptionButton = card.querySelector(".event-card-description-button");

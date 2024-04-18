@@ -1,5 +1,10 @@
 /* CTA Button */
-
+document.getElementById("signposts-button").addEventListener("click", () => {
+  document.getElementById("signposts-section").scrollIntoView();
+});
+document.getElementById("latest-jobs-button").addEventListener("click", () => {
+  document.getElementById("latest-jobs-section").scrollIntoView();
+});
 
 /* Signposts Hover Effect */
 document.querySelectorAll(".homepage-signpost").forEach((signpost) => {
