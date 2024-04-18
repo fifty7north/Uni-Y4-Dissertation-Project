@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: jobLogo
+handle: image
 instructions: 'Insert image here'
-name: 'Job Logo'
+name: Image
 searchable: false
 settings:
   allowSelfRelations: false
@@ -10,24 +10,25 @@ settings:
   allowedKinds:
     - image
   branchLimit: null
-  defaultUploadLocationSource: null
+  defaultUploadLocationSource: 'volume:6532ab1c-d19d-42a4-b6c0-160b2ef6cf80' # Images
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: null
+  maxRelations: 1
   minRelations: null
   previewMode: full
   restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: null
+  restrictedLocationSource: 'volume:6532ab1c-d19d-42a4-b6c0-160b2ef6cf80' # Images
   restrictedLocationSubpath: null
-  selectionLabel: null
+  selectionLabel: 'Add an image'
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:6532ab1c-d19d-42a4-b6c0-160b2ef6cf80' # Images
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

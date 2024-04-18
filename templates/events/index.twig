@@ -1,6 +1,386 @@
 {% extends "index" %}
-{% do craft.app.view.registerCssFile('@web/css/home.css') %}
-{% do craft.app.view.registerJsFile('@web/js/home.js') %}
+{% do craft.app.view.registerCssFile('@web/css/events.css') %}
+{% do craft.app.view.registerJsFile('@web/js/events.js') %}
 {% block content %}
- 
+<section id="events-hero">
+	<div id="events-hero-text">
+		<h1>Events</h1>
+		<p>Stay up to date with DYW Moray events, and a list of employer requests for events across schools/colleges in Moray.</p>
+        <div id="hero-buttons">
+			<div class="button">
+				<a class="button-main primary-button">DYW Events</a>
+				<div class="button-accent-1"></div>
+				<div class="button-accent-2"></div>
+			</div>
+			<div class="button">
+				<a class="button-main secondary-button">School Events</a>
+				<div class="button-accent-1"></div>
+				<div class="button-accent-2"></div>
+			</div>
+		</div>
+	</div>
+	<div id="events-hero-image-container">
+		<img src="{{siteUrl}}static/images/jobs-hero-home.svg" alt="" id="events-hero-image">
+	</div>
+</section>
+<section id="dyw-events-section">
+    <h2>DYW Events</h2>
+    <div id="dyw-events-list">
+        {% set dywEvents = craft.entries.section("dywEvents").all() %}
+        {% if dywEvents > 0%}
+            {% for event in dywEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                <div class="event-card fade-in-animation">
+                    <small>
+                        {{event.eventStartDate|date("jS M, Y")}}
+                        {% if event.eventEndDate %}
+                            - {{event.eventEndDate|date("jS M, Y")}}
+                        {% endif %}
+                    </small>
+                    <h5>{{event.title}}</h5>
+                    <small class="event-card-description">{{event.eventDescription|nl2br}}</small>
+                    <div class="event-card-buttons">
+                        <div class="button">
+                            <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                            <div class="button-accent-1"></div>
+                            <div class="button-accent-2"></div>
+                        </div>
+                        <div class="button">
+                            <a class="button-main secondary-button event-card-description-button">View More</a>
+                            <div class="button-accent-1"></div>
+                            <div class="button-accent-2"></div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</section>
+<section id="school-events-section">
+    <h2>School Events</h2>
+    {% set schoolEvents = craft.entries.section("schoolEvents").all() %}
+    {% if schoolEvents > 0 %}
+        <div id="school-events-list">
+
+            {# Events for all schools #}
+
+            <div class="school-events-category">
+                <h4>All Schools</h4>
+                {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                    {% if event.eventSchool == "all" %}
+                        <div class="event-card fade-in-animation">
+                            <small>
+                                {{event.eventStartDate|date("jS M, Y")}}
+                                {% if event.eventEndDate %}
+                                    - {{event.eventEndDate|date("jS M, Y")}}
+                                {% endif %}
+                            </small>
+                            <h5>{{event.title}}</h5>
+                            <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                            
+                            <div class="event-card-buttons">
+                                <div class="button">
+                                    <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                                <div class="button">
+                                    <a class="button-main secondary-button event-card-description-button">View More</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            {# Events for UHI Moray #}
+
+            <div class="school-events-category">
+                <h4>UHI Moray</h4>
+                {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                    {% if event.eventSchool == "uhiMoray" %}
+                        <div class="event-card fade-in-animation">
+                            <small>
+                                {{event.eventStartDate|date("jS M, Y")}}
+                                {% if event.eventEndDate %}
+                                    - {{event.eventEndDate|date("jS M, Y")}}
+                                {% endif %}
+                            </small>
+                            <h5>{{event.title}}</h5>
+                            <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                            
+                            <div class="event-card-buttons">
+                                <div class="button">
+                                    <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                                <div class="button">
+                                    <a class="button-main secondary-button event-card-description-button">View More</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            {# Events for Buckie High School #}
+
+            <div class="school-events-category">
+            <h4>Buckie High School</h4>
+                {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                    {% if event.eventSchool == "buckieHighSchool" %}
+                        <div class="event-card fade-in-animation">
+                            <small>
+                                {{event.eventStartDate|date("jS M, Y")}}
+                                {% if event.eventEndDate %}
+                                    - {{event.eventEndDate|date("jS M, Y")}}
+                                {% endif %}
+                            </small>
+                            <h5>{{event.title}}</h5>
+                            <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                            
+                            <div class="event-card-buttons">
+                                <div class="button">
+                                    <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                                <div class="button">
+                                    <a class="button-main secondary-button event-card-description-button">View More</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            {# Events for Elgin Academy #}
+
+            <div class="school-events-category">
+                <h4>Elgin Academy</h4>
+                {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                    {% if event.eventSchool == "elginAcademy" %}
+                        <div class="event-card fade-in-animation">
+                            <small>
+                                {{event.eventStartDate|date("jS M, Y")}}
+                                {% if event.eventEndDate %}
+                                    - {{event.eventEndDate|date("jS M, Y")}}
+                                {% endif %}
+                            </small>
+                            <h5>{{event.title}}</h5>
+                            <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                            
+                            <div class="event-card-buttons">
+                                <div class="button">
+                                    <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                                <div class="button">
+                                    <a class="button-main secondary-button event-card-description-button">View More</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            {# Events for Elgin High School #}
+
+            <div class="school-events-category">
+                <h4>Elgin High School</h4>
+                {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                    {% if event.eventSchool == "elginHighSchool" %}
+                        <div class="event-card fade-in-animation">
+                            <small>
+                                {{event.eventStartDate|date("jS M, Y")}}
+                                {% if event.eventEndDate %}
+                                    - {{event.eventEndDate|date("jS M, Y")}}
+                                {% endif %}
+                            </small>
+                            <h5>{{event.title}}</h5>
+                            <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                            
+                            <div class="event-card-buttons">
+                                <div class="button">
+                                    <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                                <div class="button">
+                                    <a class="button-main secondary-button event-card-description-button">View More</a>
+                                    <div class="button-accent-1"></div>
+                                    <div class="button-accent-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            {# Events for Forres Academy #}
+
+            <div class="school-events-category">
+            <h4>Forres Academy</h4>
+            {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                {% if event.eventSchool == "forresAcademy" %}
+                    <div class="event-card fade-in-animation">
+                        <small>
+                            {{event.eventStartDate|date("jS M, Y")}}
+                            {% if event.eventEndDate %}
+                                - {{event.eventEndDate|date("jS M, Y")}}
+                            {% endif %}
+                        </small>
+                        <h5>{{event.title}}</h5>
+                        <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                        
+                        <div class="event-card-buttons">
+                            <div class="button">
+                                <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                            <div class="button">
+                                <a class="button-main secondary-button event-card-description-button">View More</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+
+            {# Events for Keith Grammar School #}
+
+            <div class="school-events-category">
+            <h4>Keith Grammar School</h4>
+            {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                {% if event.eventSchool == "keithGrammarSchool" %}
+                    <div class="event-card fade-in-animation">
+                        <small>
+                            {{event.eventStartDate|date("jS M, Y")}}
+                            {% if event.eventEndDate %}
+                                - {{event.eventEndDate|date("jS M, Y")}}
+                            {% endif %}
+                        </small>
+                        <h5>{{event.title}}</h5>
+                        <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                        
+                        <div class="event-card-buttons">
+                            <div class="button">
+                                <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                            <div class="button">
+                                <a class="button-main secondary-button event-card-description-button">View More</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+
+            {# Events for Lossiemouth High School #}
+
+            <div class="school-events-category">
+            <h4>Lossiemouth High School</h4>
+            {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                {% if event.eventSchool == "lossiemouthHighSchool" %}
+                    <div class="event-card fade-in-animation">
+                        <small>
+                            {{event.eventStartDate|date("jS M, Y")}}
+                            {% if event.eventEndDate %}
+                                - {{event.eventEndDate|date("jS M, Y")}}
+                            {% endif %}
+                        </small>
+                        <h5>{{event.title}}</h5>
+                        <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                        
+                        <div class="event-card-buttons">
+                            <div class="button">
+                                <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                            <div class="button">
+                                <a class="button-main secondary-button event-card-description-button">View More</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+
+            {# Events for Milnes High School #}
+
+            <div class="school-events-category">
+            <h4>Milnes High School</h4>
+            {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                {% if event.eventSchool == "milnesHighSchool" %}
+                    <div class="event-card fade-in-animation">
+                        <small>
+                            {{event.eventStartDate|date("jS M, Y")}}
+                            {% if event.eventEndDate %}
+                                - {{event.eventEndDate|date("jS M, Y")}}
+                            {% endif %}
+                        </small>
+                        <h5>{{event.title}}</h5>
+                        <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                      
+                        <div class="event-card-buttons">
+                            <div class="button">
+                                <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                            <div class="button">
+                                <a class="button-main secondary-button event-card-description-button">View More</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+
+            {# Events for Speyside High School #}
+
+            <div class="school-events-category">
+            <h4>Speyside High School</h4>
+            {% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+                {% if event.eventSchool == "speysideHighSchool" %}
+                    <div class="event-card fade-in-animation">
+                        <small>
+                            {{event.eventStartDate|date("jS M, Y")}}
+                            {% if event.eventEndDate %}
+                                - {{event.eventEndDate|date("jS M, Y")}}
+                            {% endif %}
+                        </small>
+                        <h5>{{event.title}}</h5>
+                        <small class="event-card-description">{{event.eventDescription|nl2br}}</small>                       
+                        <div class="event-card-buttons">
+                            <div class="button">
+                                <a href="{{event.eventLink}}" class="button-main primary-button">Apply Now</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                            <div class="button">
+                                <a class="button-main secondary-button event-card-description-button">View More</a>
+                                <div class="button-accent-1"></div>
+                                <div class="button-accent-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+</section>
 {% endblock %}

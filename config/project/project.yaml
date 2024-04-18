@@ -1,4 +1,4 @@
-dateModified: 1713442690
+dateModified: 1713449947
 email:
   fromEmail: 14022526@uhi.ac.uk
   fromName: dyw-moray
@@ -20,12 +20,13 @@ meta:
     16f5a7be-1e68-4bbb-9b9d-7ce29c39bd24: 'Job Salary' # Job Salary
     028b1118-ba6d-41fb-b83d-f7bed7b8974f: 'School Event' # School Event
     65a72e1a-e99f-46f6-90d7-c40cd610f9c7: 'Job Description' # Job Description
-    85c98157-bafd-409e-9a69-4128f398c4de: 'Job Logo' # Job Logo
+    85c98157-bafd-409e-9a69-4128f398c4de: Image # Image
     345f52e6-3487-4fca-8f44-f58f33b2f978: Jobs # Jobs
     354beafa-235a-4551-8009-cf50ef5d3233: 'Event Link' # Event Link
     478a5207-7a2a-491c-bffa-817b075ad09a: Home # Home
     768f1fcd-036a-43cf-9749-379c31a599c7: 'YPG Job Guarantee' # YPG Job Guarantee
     05629c37-9cba-4fe7-8bdd-1be3c2b2de39: 'Event Description' # Event Description
+    6532ab1c-d19d-42a4-b6c0-160b2ef6cf80: Images # Images
     13762a63-bef5-426a-890e-95ab817bc6e1: dyw-moray # dyw-moray
     55304e69-65f2-49fb-83e7-5c036bda33aa: 'DYW Events' # DYW Events
     9261989a-cfbe-4cb6-8f48-5e822c3eb651: dyw-moray # dyw-moray

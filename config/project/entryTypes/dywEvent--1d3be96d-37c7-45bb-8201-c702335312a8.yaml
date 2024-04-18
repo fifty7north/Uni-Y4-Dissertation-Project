@@ -72,7 +72,7 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: cb56a70b-4098-4b49-9e20-19eab37ead9f
@@ -87,7 +87,7 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: bed96773-6e2e-4cd1-bec7-fec3734dee9d
