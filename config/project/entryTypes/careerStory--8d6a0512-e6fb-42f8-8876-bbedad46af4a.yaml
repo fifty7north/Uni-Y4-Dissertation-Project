@@ -1,0 +1,95 @@
+color: red
+fieldLayouts:
+  df330706-bb0b-4831-8c58-2155be927796:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e9f3a11a-905d-4a5d-b57f-ed40682f4474
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85c98157-bafd-409e-9a69-4128f398c4de # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c069a114-b07d-42dd-9ce0-78b16bb11677
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: eee5b4f1-7c33-4df2-8d35-c275c4f7c4ea # Post Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 300c6fb6-bfe1-40a8-9dec-73b96592a937
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4364835e-27cd-4e95-9744-9254e71d8929 # Text Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa1fe42e-d5f6-4108-b1f7-c6539abe5d46
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c60d3c51-e801-4ad3-9405-279f5a9afbf7
+        userCondition: null
+handle: careerStory
+hasTitleField: true
+icon: address-book
+name: 'Career Story'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

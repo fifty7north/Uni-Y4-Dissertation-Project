@@ -1,0 +1,31 @@
+{% extends "index" %}
+{% do craft.app.view.registerCssFile('@web/css/blog.css') %}
+{% do craft.app.view.registerJsFile('@web/js/jobs.js') %}
+{% block content %}
+	<section id="blog-hero">
+		<div id="blog-hero-text">
+			<h1>Blog</h1>
+			<p>We're passionate about the impact our work has on education, young people, and businesses - and we can't stop talking about it! Look out for our most recent blog posts.</p>
+
+		</div>
+		<div id="blog-hero-image-container">
+			<img src="{{siteUrl}}static/images/blog-hero-home.svg" alt="" id="blog-hero-image">
+		</div>
+	</section>
+	<section id="blog-list">
+		{% set blogPosts = craft.entries.section("blog").all() %}
+		{% for post in blogPosts %}
+			<div href="{{post.url}}" class="blog-post">
+				<small>{{post.postDate|date("d M, Y")}}</small>
+				<h5>{{post.title}}</h5>
+				<p>{{post.postDescription}}</p>
+				<div class="button">
+					<a href="{{post.url}}" class="button-main primary-button" id="signposts-button">Read More</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+
+			</div>
+		{% endfor %}
+	</section>
+{% endblock %}

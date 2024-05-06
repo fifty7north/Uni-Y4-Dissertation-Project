@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8d6a0512-e6fb-42f8-8876-bbedad46af4a # Career Story
+handle: careerStories
+maxAuthors: 1
+name: 'Career Stories'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: career-stories/_entry
+    uriFormat: 'career-stories/{slug}'
+type: channel

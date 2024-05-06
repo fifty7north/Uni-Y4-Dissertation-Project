@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: textContent
+instructions: "Enter the content of the post here.\r\nThis can be over multiple lines of text."
+name: 'Text Content'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

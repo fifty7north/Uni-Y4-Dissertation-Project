@@ -1,4 +1,4 @@
-dateModified: 1713449947
+dateModified: 1714996249
 email:
   fromEmail: 14022526@uhi.ac.uk
   fromName: dyw-moray
@@ -13,10 +13,13 @@ fs:
     url: '@web/uploads/images'
 meta:
   __names__:
+    0f3b2b86-8a36-402a-a0a9-70aa5bdbae02: 'Blog Post' # Blog Post
     1d3be96d-37c7-45bb-8201-c702335312a8: 'DYW Event' # DYW Event
     3f146f95-ab81-4766-a075-635a21dd4ad4: 'Job Contract Type' # Job Contract Type
     4bb70002-661b-4e95-92d2-8081dc9ae950: 'School Events' # School Events
+    07b8b5f8-be80-44e4-a388-e872ea527487: Blog # Blog
     8a9ea15a-9c9f-472d-b05d-77435c96a315: Job # Job
+    8d6a0512-e6fb-42f8-8876-bbedad46af4a: 'Career Story' # Career Story
     16f5a7be-1e68-4bbb-9b9d-7ce29c39bd24: 'Job Salary' # Job Salary
     028b1118-ba6d-41fb-b83d-f7bed7b8974f: 'School Event' # School Event
     65a72e1a-e99f-46f6-90d7-c40cd610f9c7: 'Job Description' # Job Description
@@ -29,12 +32,15 @@ meta:
     6532ab1c-d19d-42a4-b6c0-160b2ef6cf80: Images # Images
     13762a63-bef5-426a-890e-95ab817bc6e1: dyw-moray # dyw-moray
     55304e69-65f2-49fb-83e7-5c036bda33aa: 'DYW Events' # DYW Events
+    4364835e-27cd-4e95-9744-9254e71d8929: 'Text Content' # Text Content
     9261989a-cfbe-4cb6-8f48-5e822c3eb651: dyw-moray # dyw-moray
     45903707-7ecb-4921-9218-da21e15c8878: 'Event Start Date' # Event Start Date
     a0533430-d17b-4d64-86a4-0cb6be15960b: 'Job Closing Date' # Job Closing Date
+    bfb0fc83-3061-4e34-a240-b12863fdd1f1: 'Career Stories' # Career Stories
     cd3e98a3-25dd-4cdc-8cee-62277f379922: Home # Home
     dbcdaa17-4f64-44de-961b-3b9fe310d7b1: 'Job Employer' # Job Employer
     eab664f3-4c66-4834-ad22-2d4fd4a76bb0: 'Job Link' # Job Link
+    eee5b4f1-7c33-4df2-8d35-c275c4f7c4ea: 'Post Description' # Post Description
     f1b4f732-81b9-4b07-8034-b0e7696b1a7b: 'Event School' # Event School
     fe9247cf-052a-4a9e-835f-4725f296ac1d: 'Event End Date' # Event End Date
     fff31d1d-dbaf-41f0-8f31-36186988bb64: 'Job Location' # Job Location

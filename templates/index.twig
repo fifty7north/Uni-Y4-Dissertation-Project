@@ -11,8 +11,8 @@
 	</head>
 	<body>
 		<header>
-		<a href="{{siteUrl}}" id="home-button">
-			<img src="{{siteUrl}}/static/images/thumbnail_DYW_Moray_CMYK.png" alt="{{siteName}}"></img>
+			<a href="{{siteUrl}}" id="home-button">
+				<img src="{{siteUrl}}/static/images/thumbnail_DYW_Moray_CMYK.png" alt="{{siteName}}"></img>
 		</a>
 		<div id="header-links-desktop">
 			<a href="">Employers</a>
@@ -22,21 +22,18 @@
 			<a href="{{siteUrl}}events">Events</a>
 			<a href="">About Us</a>
 		</div>
-		</header>
-
-		{% block content %}
-		{# Templates inserted here #}
-		{% endblock %}
-
-		<footer>
-			<h5>email: info@dywmoray.co.uk</h5>
-			<h5>
-				UHI Moray<br>
-				Moray Street<br>
-				Elgin<br>
-				IV30 1JJ
-			</h5>
-			<a href="https://www.flaticon.com/free-icons/work" title="work icons">Icons created by Freepik - Flaticon</a>
-		</footer>
 	</body>
-</html>
+</html></header>{% block content %}
+{# Templates inserted here #}{% endblock %}<footer>
+<div class="footer-section">
+	<p>email: info@dywmoray.co.uk</p>
+	<p>
+		UHI Moray<br>
+		Moray Street<br>
+		Elgin<br>
+		IV30 1JJ
+	</p>
+</div>
+<div class="footer-section" id="footer-right">
+	<a href="https://www.flaticon.com/free-icons/work" title="work icons">Icons created by Freepik - Flaticon</a>
+</div></footer></body></html>

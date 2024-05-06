@@ -76,6 +76,11 @@
         white-space: nowrap;
     }
 
+    img {
+        max-width: 150px;
+        width: 50%;
+    }
+
     .job-card-details {
         margin: 1em 0;
     }
