@@ -17,7 +17,7 @@ function fadeInAnimation() {
   document.querySelectorAll(".fade-in-animation").forEach((element) => {
     let fadePosition =
       element.getBoundingClientRect().y +
-      (element.getBoundingClientRect().height * 0.67);
+      element.getBoundingClientRect().height * 0.67;
     if (deviceLayout == "mobileLayout") {
       if (fadePosition < window.innerHeight - 80) {
         element.classList.remove("fade-in-animation");
