@@ -249,7 +249,7 @@
     }
 }
 
-/* Stats Section: Tablet and Desktop */
+/* Latest Jobs Section: Tablet */
 @media screen and (min-width: 577px) {
     #latest-jobs-section {
         #latest-jobs-cards-container {
@@ -259,12 +259,85 @@
 
 }
 
-/* Stats Section: Tablet and Desktop */
+/* Latest Jobs Section: Desktop */
 @media screen and (min-width: 1025px) {
     #latest-jobs-section {
         #latest-jobs-cards-container {
             grid-template-columns: 33% 33% 33%;
         }
+    }
+}
+
+/* Latest Career Stories Section: Mobile */
+#latest-career-stories-section {
+    background-color: var(--darkBlue);
+    padding: 80px 12.5%;
+
+    h1 {
+        color: var(--white);
+        margin: 0;
+    }
+
+    #career-stories-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+.career-story-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .career-story-image {
+        display: flex;
+
+        img {
+            border-radius: 1em;
+            display: block;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .career-story-text {
+        background-color: var(--white);
+        border-radius: 1em;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+
+        h5,
+        p {
+            margin: 1em 0;
+        }
+    }
+}
+
+#career-story-group-2 {
+    flex-direction: column-reverse;
+}
+
+/* Latest Career Stories Section: Tablet & Desktop */
+@media screen and (min-width: 769px) {
+    .career-story-group {
+        flex-direction: row;
+
+        .career-story-image {
+            img {
+                height: 100%;
+                max-height: 300px;
+                max-width: 300px;
+                width: auto;
+            }
+        }
+    }
+
+    #career-story-group-2 {
+        flex-direction: row;
     }
 }
 
@@ -285,7 +358,7 @@
     }
 }
 
-/* Signposts Section: Tablet and Desktop */
+/* Get in Touch Section: Tablet and Desktop */
 @media screen and (min-width: 769px) {
     #get-in-touch-section {
 

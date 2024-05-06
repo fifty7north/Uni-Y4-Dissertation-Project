@@ -1,4 +1,4 @@
-dateModified: 1714996249
+dateModified: 1715027777
 email:
   fromEmail: 14022526@uhi.ac.uk
   fromName: dyw-moray
@@ -15,6 +15,7 @@ meta:
   __names__:
     0f3b2b86-8a36-402a-a0a9-70aa5bdbae02: 'Blog Post' # Blog Post
     1d3be96d-37c7-45bb-8201-c702335312a8: 'DYW Event' # DYW Event
+    02a816b7-a8ce-4f91-aaf0-4c23353533a6: 'Career Story Home Page Card' # Career Story Home Page Card
     3f146f95-ab81-4766-a075-635a21dd4ad4: 'Job Contract Type' # Job Contract Type
     4bb70002-661b-4e95-92d2-8081dc9ae950: 'School Events' # School Events
     07b8b5f8-be80-44e4-a388-e872ea527487: Blog # Blog
