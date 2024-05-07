@@ -1,0 +1,152 @@
+{% extends "index" %}
+{% do craft.app.view.registerCssFile('@web/css/whoWeWorkWith.css') %}
+{% do craft.app.view.registerJsFile('@web/js/whoWeWorkWith.js') %}
+{% block content %}
+	<section id="hero">
+		<div id="hero-text">
+			<h1>Young People & Parents</h1>
+			<p>Many young people struggle to identify their career goals, and parents often worry about what opportunities will be available for their children when they leave school. In both cases, more engagement with employers and better access to work experience while at school can help you to better understand the available career paths, opportunities and options available in the workplace.</p>
+
+		</div>
+		<div id="hero-image-container">
+			<img src="{{siteUrl}}static/images/young-people-and-parents-hero-image.svg" alt="" id="hero-image">
+		</div>
+	</section>
+	<section id="get-involved-section">
+		<h2>How we can help young people</h2>
+		<div class="get-involved-cards">
+			<div class="get-involved-card card-hover fade-in-animation">
+				<div class="get-involved-card-image">
+					<img src="{{siteUrl}}static/images/placeholder.webp">
+				</div>
+				<div class="get-involved-card-text">
+					<h5>Skills Development</h5>
+					<p>We aim to give you more opportunities to learn and develop your skills for work. Soft skills such as resilience, communication and teamwork are a few of the many skills that employers are looking for.</p>
+				</div>
+			</div>
+			<div class="get-involved-card card-hover fade-in-animation">
+				<div class="get-involved-card-image">
+					<img src="{{siteUrl}}static/images/placeholder.webp">
+				</div>
+				<div class="get-involved-card-text">
+					<h5>Experience</h5>
+					<p>Real life experiences of the world of work will allow you to learn more about yourself, test what your career interests are what is expected of you in the workplace.</p>
+				</div>
+			</div>
+			<div class="get-involved-card card-hover fade-in-animation">
+				<div class="get-involved-card-image">
+					<img src="{{siteUrl}}static/images/placeholder.webp">
+				</div>
+				<div class="get-involved-card-text">
+					<h5>Confidence</h5>
+					<p>Building your confidence with CVs, interviews and experience in the workplace with employers.</p>
+				</div>
+			</div>
+			<div class="get-involved-card card-hover fade-in-animation">
+				<div class="get-involved-card-image">
+					<img src="{{siteUrl}}static/images/placeholder.webp">
+				</div>
+				<div class="get-involved-card-text">
+					<h5>Career Choices</h5>
+					<p>Information from employers and inspiration around career choices will open your eyes to the opportunities that are on your doorstep.</p>
+				</div>
+			</div>
+			<div class="get-involved-card card-hover fade-in-animation">
+				<div class="get-involved-card-image">
+					<img src="{{siteUrl}}static/images/placeholder.webp">
+				</div>
+				<div class="get-involved-card-text">
+					<h5>Qualifications</h5>
+					<p>Developing and achieving recognised qualifications. There are so many qualifications that are available for you to explore.</p>
+				</div>
+			</div>
+			<div class="get-involved-card card-hover fade-in-animation">
+				<div class="get-involved-card-image">
+					<img src="{{siteUrl}}static/images/placeholder.webp">
+				</div>
+				<div class="get-involved-card-text">
+					<h5>Finding a Job</h5>
+					<p>Providing information to help you find a job and a career. Our jobs page lists opportunities that are available in Moray that are suitable for young people.</p>
+				</div>
+			</div>
+			<div class="get-involved-card card-hover fade-in-animation">
+				<div class="get-involved-card-image">
+					<img src="{{siteUrl}}static/images/placeholder.webp">
+				</div>
+				<div class="get-involved-card-text">
+					<h5>Entrepreneurial Skills</h5>
+					<p>Offering you more opportunities to develop your entrepreneurial skills, especially if you are interested in starting up your own business. We can also help point you in the right direction for guidance and support for a start-up business.</p>
+				</div>
+			</div>
+			<div class="get-involved-card card-hover fade-in-animation">
+				<div class="get-involved-card-image">
+					<img src="{{siteUrl}}static/images/placeholder.webp">
+				</div>
+				<div class="get-involved-card-text">
+					<h5>Finding a Job</h5>
+					<p>Leaving school? There's lots of support out there, but we know it can be tricky to find information you need, at the right time. We can link you to resources to help support you during this important peroid, such as this
+						<span>
+							<a href="https://www.myworldofwork.co.uk/schoolleaverstoolkit">school leavers toolkit.</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="benefits-section">
+		<h2>What we can support young people with</h2>
+		<div id="benefits-list-container">
+			<div>
+				<img src="{{siteUrl}}static/images/blog-hero-image.svg">
+			</div>
+			<ul class="fade-in-animation" id="benefits-list-parents">
+				<li>The benefits of work-based learning</li>
+				<li>The importance and relevance of apprenticeships</li>
+				<li>Growing industry sectors and career opportunities</li>
+				<li>Employer involvement with local schools and colleges</li>
+				<li>Local career opportunities</li>
+			</ul>
+			<div>
+				<img src="{{siteUrl}}static/images/events-hero-image.svg">
+			</div>
+		</div>
+	</section>
+	<section id="find-out-more-section">
+		<h2>Find out more about...</h2>
+		<div class="find-out-more-container">
+			<a href="{{siteUrl}}events" class="signpost card-hover fade-in-animation">
+				<img src="{{siteUrl}}static/images/icons/open-book.png">
+				<h4 class="highlight-effect-yellow">Career Stories</h4>
+				<p>Read about how some of Moray's young people have been developed locally.</p>
+			</a>
+			<a href="https://www.apprenticeships.scot/" class="signpost card-hover fade-in-animation">
+				<img src="{{siteUrl}}static/images/icons/apprenticeship.png">
+				<h4 class="highlight-effect-yellow">Apprenticeships</h4>
+				<p>There are over 100 types of apprenticeships available in Scotland. From construction to digital media, you can find one to suit your business.</p>
+			</a>
+			<a href="https://dywmoray.us14.list-manage.com/subscribe?u=1f7c9fcd6e5f65aaa681d7ac2&id=870f04e837" class="signpost card-hover fade-in-animation">
+				<img src="{{siteUrl}}static/images/icons/graduation-hat.png">
+				<h4 class="highlight-effect-yellow">College</h4>
+				<p>Our local Moray College UHI offers a range of courses that you can choose from to kickstart your career.</p>
+			</a>
+		</div>
+		<div class="find-out-more-container">
+			<a href="{{siteUrl}}events" class="signpost card-hover fade-in-animation">
+				<img src="{{siteUrl}}static/images/icons/suitcase.png">
+				<h4 class="highlight-effect-green">Jobs</h4>
+				<p>To make it easier for young people in Moray to find opportunities, we have listed a variety of jobs that are currently available in Moray.</p>
+			</a>
+			<a href="https://www.apprenticeships.scot/" class="signpost card-hover fade-in-animation">
+				<img src="{{siteUrl}}static/images/icons/calendar.png">
+				<h4 class="highlight-effect-green">Events</h4>
+				<p>Stay up to date with DYW Moray news and events, and find out about some of the people we have worked with.</p>
+			</a>
+			<a href="https://dywmoray.us14.list-manage.com/subscribe?u=1f7c9fcd6e5f65aaa681d7ac2&id=870f04e837" class="signpost card-hover fade-in-animation">
+				<img src="{{siteUrl}}static/images/icons/content-writing.png">
+				<h4 class="highlight-effect-green">Blog</h4>
+				<p>We're passionate about the impact our work has on education, young people, and businesses - and we can't stop talking about it!</p>
+			</a>
+		</div>
+
+	</section>
+{% endblock %}

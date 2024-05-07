@@ -1,0 +1,252 @@
+/* Get Involved Section: Mobile */
+#get-involved-section {
+   padding: 80px 12.5%;
+
+   h2 {
+      text-align: center;
+   }
+
+
+}
+
+.get-involved-cards {
+   display: grid;
+   gap: 1em;
+   grid-template-columns: 1fr;
+}
+
+.get-involved-card {
+   background-color: var(--lightGrey);
+   border-radius: 1em;
+   display: flex;
+   flex-direction: column;
+
+   .get-involved-card-image {
+      width: 100%;
+
+      img {
+         border-radius: 1em 1em 0 0;
+         object-fit: cover;
+         width: 100%;
+      }
+   }
+
+   .get-involved-card-text {
+      padding: 1em;
+      text-align: justify;
+
+      h5 {
+         margin: 0;
+         text-align: left;
+      }
+
+      p {
+         margin-bottom: 0;
+      }
+   }
+}
+
+/* Get Involved Section: Tablet & Desktop */
+@media screen and (min-width: 769px) {
+   .get-involved-cards {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .get-involved-card {
+      flex-direction: row;
+
+      .get-involved-card-image {
+         align-items: center;
+         padding: 1em 0 1em 1em;
+         max-width: 33%;
+         width: 160px;
+
+         img {
+            border-radius: 1em;
+            width: 100%;
+         }
+      }
+
+      .get-involved-card-text {
+         flex: 1;
+      }
+
+      a {
+         color: var(--lightBlue);
+      }
+   }
+}
+
+/* aaa */
+#benefits-section {
+   background-color: var(--darkBlue);
+   color: var(--white);
+   padding: 80px 0;
+
+   h2 {
+      text-align: center;
+   }
+
+   #benefits-list-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2.442em;
+      justify-content: center;
+
+      div {
+         flex: 1;
+
+         img {
+            width: 100%;
+         }
+      }
+
+      ul {
+         display: flex;
+         flex-direction: column;
+         gap: 1em;
+         list-style: none;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 0;
+         width: fit-content;
+      }
+
+      li {
+         display: flex;
+         gap: 1rem;
+         text-align: justify;
+      }
+
+      li:before {
+         content: "✓ ";
+         font-size: 1.25em;
+         font-weight: bolder;
+         transform: translateY(-0.2rem);
+      }
+   }
+
+   #benefits-list-employers {
+      li:before {
+         color: var(--accentBlue);
+      }
+   }
+
+   #benefits-list-educators {
+      li:before {
+         color: var(--accentPink);
+      }
+   }
+
+   #benefits-list-young-people {
+      li:before {
+         color: var(--accentYellow);
+      }
+   }
+
+   #benefits-list-parents {
+      li:before {
+         color: var(--accentGreen);
+      }
+   }
+
+   .get-involved-card {
+      background-color: var(--white);
+      color: var(--black);
+   }
+}
+
+/* Benefits Section: Tablet */
+@media screen and (min-width: 769px) {
+   #benefits-section {
+      #benefits-list-container {
+         flex-direction: row;
+      }
+   }
+}
+
+/* Benefits Section: Desktop */
+@media screen and (min-width: 1025px) {
+   #benefits-section {
+      padding: 80px 12.5%;
+   }
+}
+
+/* Get in Touch Section: Mobile */
+#find-out-more-section {
+   margin-top: 10vh;
+   padding: 0 12.5%;
+
+   h2 {
+      text-align: center;
+   }
+
+   .find-out-more-container {
+      align-items: center;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+      padding-bottom: 2em;
+      text-align: center;
+
+      a {
+         justify-self: center;
+      }
+   }
+}
+
+.signpost {
+   background-color: var(--lightGrey);
+   border-radius: 1rem;
+   color: inherit;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   text-decoration: none;
+
+   img {
+      margin: 2rem auto 1rem auto;
+      max-width: 64px;
+      padding: 0.5em;
+      width: 25%;
+      transition: all 0.5s;
+      transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+   }
+
+   .signpost-image-hover {
+      max-width: calc(64px + 1em);
+      padding: 0;
+      width: calc(25% + 1em);
+   }
+
+   h4 {
+      margin: 0 auto 0 auto;
+      text-align: center;
+      width: fit-content;
+      z-index: 1;
+   }
+
+   p {
+      margin: 1rem 2rem 2rem 2rem;
+      text-align: justify;
+   }
+}
+
+/* Get in Touch Section: Tablet and Desktop */
+@media screen and (min-width: 577px) {
+   .signpost {
+      max-width: 400px;
+   }
+}
+
+@media screen and (min-width: 769px) {
+   #find-out-more-section {
+
+      .find-out-more-container {
+         grid-template-columns: 1fr 1fr 1fr;
+         margin: 0 auto 0 auto;
+         width: fit-content;
+      }
+   }
+}
