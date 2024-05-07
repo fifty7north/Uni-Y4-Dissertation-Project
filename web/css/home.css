@@ -75,7 +75,7 @@
     }
 }
 
-.homepage-signpost {
+.signpost {
     background-color: var(--lightGrey);
     border-radius: 1rem;
     color: inherit;
@@ -123,7 +123,7 @@
         }
     }
 
-    .homepage-signpost {
+    .signpost {
         max-width: 400px;
     }
 }
