@@ -206,6 +206,65 @@ footer {
     }
 }
 
+/* Universal Hero Section: Mobile */
+#hero {
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    gap: 3.053em;
+    justify-content: space-between;
+    min-height: 50vh;
+    padding: 80px 12.5% 0 12.5%;
+
+    #hero-text,
+    #hero-image-container {
+        height: fit-content;
+        width: 100%;
+    }
+
+    #hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        text-align: justify;
+
+        h1,
+        p {
+            color: var(--white);
+            margin: 0;
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    #hero-buttons {
+        display: flex;
+        gap: 2em;
+    }
+}
+
+/* Universal Hero Section: Tablet and Desktop */
+@media screen and (min-width: 769px) {
+    #hero {
+        align-items: center;
+        flex-direction: row;
+        padding-top: 80px;
+
+        #hero-text,
+        #hero-image-container {
+            width: 50%;
+        }
+
+        #hero-image-container {
+            align-self: flex-end;
+        }
+    }
+}
+
 /* Buttons */
 .button {
     display: flex;

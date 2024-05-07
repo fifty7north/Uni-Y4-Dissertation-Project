@@ -2,8 +2,8 @@
 {% do craft.app.view.registerCssFile('@web/css/home.css') %}
 {% do craft.app.view.registerJsFile('@web/js/home.js') %}
 {% block content %}
-	<section id="hero-section">
-		<div id="hero-section-text">
+	<section id="home-hero-section">
+		<div id="home-hero-section-text">
 			<h1>
 				Bridging the gap between
 				<span style="color: var(--accentBlue)">employers</span>,
@@ -11,7 +11,7 @@
 				and
 				<span style="color: var(--accentYellow)">young people</span>.
 			</h1>
-			<div id="hero-buttons">
+			<div id="home-hero-buttons">
 				<div class="button">
 					<a class="button-main primary-button" id="signposts-button">Find out more</a>
 					<div class="button-accent-1"></div>
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="hero-section-image">
+		<div id="home-hero-section-image">
 			<img src="{{siteUrl}}static/images/home-hero-image.svg" alt="">
 		</div>
 	</section>

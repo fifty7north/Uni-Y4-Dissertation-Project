@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (heroCounter >= heroImages.length) {
       heroCounter = 0;
     }
-    document.getElementById("jobs-hero-image").src =
+    document.getElementById("hero-image").src =
       "static/images/" + heroImages[heroCounter];
   }, 1000);
 
