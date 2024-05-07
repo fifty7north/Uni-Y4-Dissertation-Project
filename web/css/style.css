@@ -288,6 +288,15 @@ footer {
     }
 }
 
+/* Card Hover Effect */
+.card-hover {
+    transition: transform 0.25s;
+}
+
+.card-hover:hover {
+    transform: translateY(-0.5rem);
+}
+
 /* Highlighter Text Effect */
 .highlight-effect-blue,
 .highlight-effect-pink,

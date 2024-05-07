@@ -15,7 +15,7 @@
 		{% set jobs = craft.entries.section("jobs").all() %}
 		{% if jobs|length > 0 %}
 			{% for job in jobs|sort((a, b) => a.jobClosingDate|date("Ymd") > b.jobClosingDate|date("Ymd")) %}
-				<div class="job-card fade-in-animation">
+				<div class="job-card card-hover fade-in-animation">
 					<h5>{{job.title}}</h5>
 					{% set image = job.image.one() %}
 					<img src="{{image.url}}">

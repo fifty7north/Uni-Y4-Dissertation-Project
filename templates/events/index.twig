@@ -29,7 +29,7 @@
 			{% set dywEvents = craft.entries.section("dywEvents").all() %}
 			{% if dywEvents > 0%}
 				{% for event in dywEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
-					<div class="event-card fade-in-animation">
+					<div class="event-card card-hover fade-in-animation">
 						<small>
 							{{event.eventStartDate|date("jS M, Y")}}
 							{% if event.eventEndDate %}
@@ -69,7 +69,7 @@
 					<h4>All Schools</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "all" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -102,7 +102,7 @@
 					<h4>UHI Moray</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "uhiMoray" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -135,7 +135,7 @@
 					<h4>Buckie High School</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "buckieHighSchool" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -168,7 +168,7 @@
 					<h4>Elgin Academy</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "elginAcademy" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -201,7 +201,7 @@
 					<h4>Elgin High School</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "elginHighSchool" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -234,7 +234,7 @@
 					<h4>Forres Academy</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "forresAcademy" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -267,7 +267,7 @@
 					<h4>Keith Grammar School</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "keithGrammarSchool" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -300,7 +300,7 @@
 					<h4>Lossiemouth High School</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "lossiemouthHighSchool" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -333,7 +333,7 @@
 					<h4>Milnes High School</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "milnesHighSchool" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}
@@ -366,7 +366,7 @@
 					<h4>Speyside High School</h4>
 					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
 						{% if event.eventSchool == "speysideHighSchool" %}
-							<div class="event-card fade-in-animation">
+							<div class="event-card card-hover fade-in-animation">
 								<small>
 									{{event.eventStartDate|date("jS M, Y")}}
 									{% if event.eventEndDate %}

@@ -31,22 +31,22 @@
 	<section id="signposts-section">
 		<h2>Want to know more about who we work with?</h2>
 		<div id="signposts-container">
-			<a href="" class="homepage-signpost fade-in-animation">
+			<a href="{{siteUrl}}employers" class="homepage-signpost card-hover fade-in-animation">
 				<img src="{{siteUrl}}static/images/icons/suitcase.png">
 				<h3 class="highlight-effect-blue">Employers</h3>
 				<p>We bring employers on board as partners and link them up to schools and projects where they can make a real difference and inspire tomorrow's talent.</p>
 			</a>
-			<a href="" class="homepage-signpost fade-in-animation">
+			<a href="{{siteUrl}}educators" class="homepage-signpost card-hover fade-in-animation">
 				<img src="{{siteUrl}}static/images/icons/graduation-hat.png">
 				<h3 class="highlight-effect-pink">Educators</h3>
 				<p>We work with teachers, lecturers and early years educators to understand the curriculum they teach, and where Moray businesses can support.</p>
 			</a>
-			<a href="" class="homepage-signpost fade-in-animation">
+			<a href="{{siteUrl}}young_people_&_parents" class="homepage-signpost card-hover fade-in-animation">
 				<img src="{{siteUrl}}static/images/icons/school.png">
 				<h3 class="highlight-effect-yellow">Young People</h3>
 				<p>We organise a range of events throughout the year to help young people and their parents understand the range of opportunities available.</p>
 			</a>
-			<a href="" class="homepage-signpost fade-in-animation">
+			<a href="{{siteUrl}}young_people_&_parents" class="homepage-signpost card-hover fade-in-animation">
 				<img src="{{siteUrl}}static/images/icons/parents.png">
 				<h3 class="highlight-effect-green">Parents</h3>
 				<p>We're passionate about the importance our work has on education, young people, and businesses.</p>
@@ -82,7 +82,7 @@
 		<div id="latest-jobs-cards-container">
 			{% set latestJobs = craft.entries.section("jobs").all()%}
 			{% if latestJobs|length > 0 %}
-				<div class="job-card fade-in-animation">
+				<div class="job-card card-hover fade-in-animation">
 					<h5>{{latestJobs[0].title}}</h5>
 					{% set image1 = latestJobs[0].image.one() %}
 					<img src="{{image1.url}}">
@@ -123,7 +123,7 @@
 				</div>
 			{% endif %}
 			{% if latestJobs|length > 1 %}
-				<div class="job-card fade-in-animation">
+				<div class="job-card card-hover fade-in-animation">
 					<h5>{{latestJobs[1].title}}</h5>
 					{% set image2 = latestJobs[1].image.one() %}
 					<img src="{{image2.url}}">
@@ -164,7 +164,7 @@
 				</div>
 			{% endif %}
 			{% if latestJobs|length > 2 %}
-				<div class="job-card fade-in-animation">
+				<div class="job-card card-hover fade-in-animation">
 					<h5>{{latestJobs[2].title}}</h5>
 					{% set image3 = latestJobs[2].image.one() %}
 					<img src="{{image3.url}}">
@@ -212,15 +212,15 @@
 			{% set careerStories = craft.entries.section("careerStories").all() %}
 			{% if careerStories|length > 0 %}
 				<div class="career-story-group">
-					<div class="career-story-image">
+					<div class="career-story-image card-hover fade-in-animation">
 						{% set careerStoryImage1 = careerStories[0].image.one() %}
 						<img src="{{careerStoryImage1.getUrl("careerStoryHomePageCard")}}">
 					</div>
-					<div class="career-story-text">
+					<div class="career-story-text card-hover fade-in-animation">
 						<h5>{{careerStories[0].title}}</h5>
 						<p>{{careerStories[0].postDescription}}</p>
 						<div class="button">
-							<a href="{{careerStories[0].url}}" class="button-main primary-button">Apply Now</a>
+							<a href="{{careerStories[0].url}}" class="button-main primary-button">Read More</a>
 							<div class="button-accent-1"></div>
 							<div class="button-accent-2"></div>
 						</div>
@@ -229,16 +229,16 @@
 			{% endif %}
 			{% if careerStories|length > 1 %}
 				<div class="career-story-group" id="career-story-group-2">
-					<div class="career-story-text">
+					<div class="career-story-text card-hover fade-in-animation">
 						<h5>{{careerStories[1].title}}</h5>
 						<p>{{careerStories[1].postDescription}}</p>
 						<div class="button">
-							<a href="{{careerStories[1].url}}" class="button-main primary-button">Apply Now</a>
+							<a href="{{careerStories[1].url}}" class="button-main primary-button">Read More</a>
 							<div class="button-accent-1"></div>
 							<div class="button-accent-2"></div>
 						</div>
 					</div>
-					<div class="career-story-image">
+					<div class="career-story-image card-hover fade-in-animation">
 						{% set careerStoryImage2 = careerStories[1].image.one() %}
 						<img src="{{careerStoryImage2.getUrl("careerStoryHomePageCard")}}">
 					</div>
@@ -249,17 +249,17 @@
 	<section id="get-in-touch-section">
 		<h2>Learn more and get in touch</h2>
 		<div id="get-in-touch-container">
-			<a href="{{siteUrl}}events" class="homepage-signpost fade-in-animation">
+			<a href="{{siteUrl}}events" class="homepage-signpost card-hover fade-in-animation">
 				<img src="{{siteUrl}}static/images/icons/calendar.png">
 				<h3 class="highlight-effect-pink">Events</h3>
 				<p>Stay up to date with DYW Moray news and events, and find out about some of the people we have worked with.</p>
 			</a>
-			<a href="{{siteUrl}}blog" class="homepage-signpost fade-in-animation">
+			<a href="{{siteUrl}}blog" class="homepage-signpost card-hover fade-in-animation">
 				<img src="{{siteUrl}}static/images/icons/content-writing.png">
 				<h3 class="highlight-effect-blue">Blog</h3>
 				<p>We're passionate about the impact our work has on education, young people, and businesses - and we can't stop talking about it!</p>
 			</a>
-			<a href="https://dywmoray.us14.list-manage.com/subscribe?u=1f7c9fcd6e5f65aaa681d7ac2&id=870f04e837" class="homepage-signpost fade-in-animation">
+			<a href="https://dywmoray.us14.list-manage.com/subscribe?u=1f7c9fcd6e5f65aaa681d7ac2&id=870f04e837" class="homepage-signpost card-hover fade-in-animation">
 				<img src="{{siteUrl}}static/images/icons/newsletter.png">
 				<h3 class="highlight-effect-yellow">Newsletter</h3>
 				<p>Keep up to date with our news and events by signing up to our newsletter.</p>
