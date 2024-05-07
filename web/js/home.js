@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
   /* Signposts Hover Effect */
-  document.querySelectorAll(".homepage-signpost").forEach((signpost) => {
+  document.querySelectorAll(".signpost").forEach((signpost) => {
     signpost.addEventListener("mouseenter", () => {
       signpost.querySelector("h3").classList.add("highlight-effect-hover");
       signpost.querySelector("img").classList.add("signpost-image-hover");
