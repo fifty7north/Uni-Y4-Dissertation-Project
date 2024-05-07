@@ -1,7 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
   /* CTA Button */
-  console.log(document.getElementById("signposts-button"));
-
   document.getElementById("signposts-button").addEventListener("click", () => {
     document.getElementById("signposts-section").scrollIntoView();
   });

@@ -1,18 +1,48 @@
 {% extends "index" %}
 {% do craft.app.view.registerCssFile('@web/css/blog.css') %}
+{% do craft.app.view.registerJsFile('@web/js/blog.js') %}
 {% block content %}
 	<section id="hero">
 		<div id="hero-text">
 			<h1>Blog</h1>
-			<p>We're passionate about the impact our work has on education, young people, and businesses - and we can't stop talking about it! Look out for our most recent blog posts.</p>
+			<p>We're passionate about the impact our work has on education, young people, and businesses - and we can't stop talking about it! Here you can read all of our blog posts and career stories.</p>
+			<div id="hero-buttons">
+				<div class="button">
+					<a class="button-main primary-button" id="blog-button">Read our Blog</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+				<div class="button">
+					<a class="button-main secondary-button" id="career-stories-button">Career Stories</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+			</div>
 
 		</div>
 		<div id="hero-image-container">
 			<img src="{{siteUrl}}static/images/blog-hero-image.svg" alt="" id="hero-image">
 		</div>
 	</section>
-	<section id="blog-list">
+	<section class="blog-list" id="blog-posts">
+		<h2>Blog</h2>
 		{% set blogPosts = craft.entries.section("blog").all() %}
+		{% for post in blogPosts %}
+			<div href="{{post.url}}" class="blog-post">
+				<small>{{post.postDate|date("d M, Y")}}</small>
+				<h5>{{post.title}}</h5>
+				<p>{{post.postDescription}}</p>
+				<div class="button">
+					<a href="{{post.url}}" class="button-main primary-button">Read More</a>
+					<div class="button-accent-1"></div>
+					<div class="button-accent-2"></div>
+				</div>
+			</div>
+		{% endfor %}
+	</section>
+	<section class="blog-list" id="career-stories">
+		<h2>Career Stories</h2>
+		{% set blogPosts = craft.entries.section("careerStories").all() %}
 		{% for post in blogPosts %}
 			<div href="{{post.url}}" class="blog-post">
 				<small>{{post.postDate|date("d M, Y")}}</small>
@@ -23,8 +53,8 @@
 					<div class="button-accent-1"></div>
 					<div class="button-accent-2"></div>
 				</div>
-
 			</div>
 		{% endfor %}
 	</section>
+
 {% endblock %}
