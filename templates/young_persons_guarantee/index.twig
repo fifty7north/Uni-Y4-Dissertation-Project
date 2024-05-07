@@ -1,0 +1,32 @@
+{% extends "index" %}
+{% do craft.app.view.registerCssFile('@web/css/ypg.css') %}
+{% block content %}
+	<section id="hero">
+		<div id="hero-text">
+			<h1>Young Person's Guarantee</h1>
+			<p>Find out how you can get involved in the Young Person's Guarantee.</p>
+			<div class="button">
+				<a href="{{siteUrl}}files/Guidance-Document-Young-Persons-Guarantee.pdf" class="button-main primary-button" id="dyw-events-button">Download Guidance</a>
+				<div class="button-accent-1"></div>
+				<div class="button-accent-2"></div>
+			</div>
+		</div>
+		<div id="hero-image-container">
+			<img src="{{siteUrl}}images/hero/events-hero-image.svg" alt="" id="hero-image">
+		</div>
+	</section>
+	<section id="page-content">
+		<h2>Our goals</h2>
+		<p>Within two years, every person aged between 16 and 24 in Scotland will have the opportunity, depending on their circumstances, to study; take up an apprenticeship, job or work experience; or participate in formal volunteering. This is the ambition of the Young Person's Guarantee, as proposed by Sandy Begbie CBE in September 2020 and committed to by the Scottish Government in the 2020/21 Programme for Government.</p>
+		<p>We are looking for local employers from all sectors - small, medium, and large - to consider how they can support the Young Person’s Guarantee. The support is built around 5 key areas:</p>
+		<ol>
+			<li>To prepare young people for the world of work</li>
+			<li>To help all young people achieve their potential</li>
+			<li>To invest in a skilled workforce</li>
+			<li>To create jobs, volunteering, and training opportunities</li>
+			<li>To create an inclusive and fair workplace</li>
+		</ol>
+		<p>Please download the attached framework via the link above for further guidance on the Young Person’s Guarantee.</p>
+		<p>If you can commit to supporting a young person over the next 12 months, from offering a very small opportunity to potentially a bigger commitment, then we would welcome local employers to complete the following form. Please get in touch with the team, who will support you to complete the form and discuss potential opportunities for you to get involved with - info@dywmoray.co.uk.</p>
+	</section>
+{% endblock %}

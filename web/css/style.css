@@ -119,6 +119,7 @@ header {
         font-size: 0.9rem;
         font-weight: bold;
         text-decoration: none;
+        transition: all 0.25s;
     }
 }
 
@@ -141,6 +142,11 @@ header {
             align-items: center;
             display: flex;
             gap: 2em;
+
+            a:hover {
+                color: var(--lightBlue);
+                text-decoration: underline;
+            }
         }
     }
 

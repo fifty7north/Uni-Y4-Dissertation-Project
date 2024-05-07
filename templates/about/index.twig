@@ -1,0 +1,40 @@
+{% extends "index" %}
+{% do craft.app.view.registerCssFile('@web/css/about.css') %}
+{% block content %}
+	<section id="hero">
+		<div id="hero-text">
+			<h1>About Us</h1>
+			<p>DYW Moray engages employers from across the region to make it easy to work with our college and schools and to provide more opportunities for young people to develop their employability skills. We would like all young people in Moray from the age of 3-24 years old to have some preparation for the world of work.</p>
+		</div>
+		<div id="hero-image-container">
+			<img src="{{siteUrl}}images/hero/employers-hero-image.svg" alt="" id="hero-image">
+		</div>
+	</section>
+	<section id="video-section">
+		<h2>Who are we?</h2>
+		<div>
+			<iframe src="https://www.youtube.com/embed/-B8qz_UUhQk?si=6YgaBhOzqMf3iHvF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</section>
+	<section id="goals-section">
+		<h2>Our goals</h2>
+		<div id="goals-list-container">
+			<div>
+				<img src="{{siteUrl}}images/hero/home-hero-image.svg">
+			</div>
+			<ul class="fade-in-animation" id="goals-list-employers">
+				<li>Facilitates business growth and sustainability</li>
+				<li>Raises company and industry profile</li>
+				<li>Develops and energises staff</li>
+				<li>Supports with succession planning</li>
+				<li>Help give something back</li>
+				<li>Streamlines recruitment process</li>
+				<li>Creates a talent pipeline into the industry</li>
+				<li>Contributes to corporate social responsibility</li>
+			</ul>
+			<div>
+				<img src="{{siteUrl}}images/hero/events-hero-image.svg">
+			</div>
+		</div>
+	</section>
+{% endblock %}
