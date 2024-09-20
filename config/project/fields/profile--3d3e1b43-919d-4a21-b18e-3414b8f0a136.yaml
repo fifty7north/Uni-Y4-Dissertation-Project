@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: profile
+instructions: null
+name: Profile
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 1917324b-1d57-4b5c-beb9-b95130d0d1a2
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

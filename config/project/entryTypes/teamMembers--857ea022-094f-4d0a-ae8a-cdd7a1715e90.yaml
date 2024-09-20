@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  3fc11562-4ef7-4342-8a1c-c34892b357c0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2cce7159-613c-4582-8d9d-5a3350315638
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85c98157-bafd-409e-9a69-4128f398c4de # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5292866b-172e-4eb3-8c88-17860ee74100
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 65a72e1a-e99f-46f6-90d7-c40cd610f9c7 # Job Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6395e789-c5e4-4fad-b28c-5cd93e2033d8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 388c937a-4d86-4456-ac4a-017b6240338f
+        userCondition: null
+handle: teamMembers
+hasTitleField: true
+icon: user
+name: 'Team Members'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

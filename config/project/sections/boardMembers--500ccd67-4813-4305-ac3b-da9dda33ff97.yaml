@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 857ea022-094f-4d0a-ae8a-cdd7a1715e90 # Team Members
+handle: boardMembers
+maxAuthors: 1
+name: 'Board Members'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: board-members/_entry
+    uriFormat: 'board-members/{slug}'
+type: channel

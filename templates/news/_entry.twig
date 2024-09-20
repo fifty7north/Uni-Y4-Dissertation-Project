@@ -1,0 +1,28 @@
+{% extends "index" %}
+{% do craft.app.view.registerCssFile('@web/css/blog.css') %}
+{# {% do craft.app.view.registerJsFile('@web/js/jobs.js') %} #}
+{% block content %}
+	<section id="blog-hero">
+		<div id="blog-hero-text">
+			<h1>{{entry.title}}</h1>
+			<p>{{entry.postDescription}}</p>
+		</div>
+		<div id="blog-hero-image-container">
+			{% set image = entry.image.one() %}
+			<div id="blog-hero-image">
+				<img src="{{image.url}}" alt="{{entry.title}}">
+			</div>
+		</div>
+	</section>
+	<section id="blog-post-content">
+		<small>Published
+			{{entry.postDate|date("d M, Y")}}</small>
+		<p>{{entry.textContent|nl2br}}</p>
+	</section>
+	<section id="image-gallery">
+		{% set imageGallery = entry.imageGallery.all() %}
+		{% for image in imageGallery %}
+			<img src="{{image.image.one().url}}" alt="{{image.title}}" class="card-hover fade-in-animation">
+		{% endfor %}
+	</section>
+{% endblock %}

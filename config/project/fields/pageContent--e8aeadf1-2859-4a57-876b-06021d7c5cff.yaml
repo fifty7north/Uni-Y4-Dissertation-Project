@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: pageContent
+instructions: 'Main text content of the page'
+name: 'Page Content'
+searchable: false
+settings:
+  createButtonLabel: 'New section'
+  entryTypes:
+    - 3d7ddbbd-b362-4bcf-8358-a68fe483742a # Extra Page Text Section
+  includeTableView: false
+  maxEntries: 3
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

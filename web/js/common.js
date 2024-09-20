@@ -12,6 +12,13 @@ addEventListener("resize", () => {
   getLayout();
 });
 
+/* Mobile Navbar */
+document
+  .getElementById("navbar-mobile-button")
+  .addEventListener("click", () => {
+    document.querySelector("header").classList.toggle("mobile-expand");
+  });
+
 /* Fade In Animation */
 function fadeInAnimation() {
   document.querySelectorAll(".fade-in-animation").forEach((element) => {

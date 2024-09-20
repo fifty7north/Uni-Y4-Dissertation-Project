@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - b1cbf6e4-b49b-4b63-9cf1-2fffd111df56 # Stats Document
+handle: statsDocument
+maxAuthors: 1
+name: 'Stats Document'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: stats-document/_entry
+    uriFormat: stats-document
+type: single

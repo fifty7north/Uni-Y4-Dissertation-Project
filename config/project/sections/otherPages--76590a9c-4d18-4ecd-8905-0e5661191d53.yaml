@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 34bd75f0-4d7e-4500-8c66-a6234b68b611 # Extra Page
+handle: otherPages
+maxAuthors: 1
+name: 'Other Pages'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: other-pages/_entry
+    uriFormat: 'other-pages/{slug}'
+type: channel

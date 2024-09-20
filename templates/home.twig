@@ -25,29 +25,29 @@
 			</div>
 		</div>
 		<div id="home-hero-section-image">
-			<img src="{{siteUrl}}images/hero/home-hero-image.svg" alt="">
+			<img src="{{siteUrl}}images/hero/home-hero-image.svg" alt="Home page hero image">
 		</div>
 	</section>
 	<section id="signposts-section">
 		<h2>Want to know more about who we work with?</h2>
 		<div id="signposts-container">
 			<a href="{{siteUrl}}employers" class="signpost card-hover fade-in-animation">
-				<img src="{{siteUrl}}images/icons/suitcase.png">
+				<img src="{{siteUrl}}images/icons/suitcase.png" alt="Employers icon">
 				<h3 class="highlight-effect-blue">Employers</h3>
 				<p>We bring employers on board as partners and link them up to schools and projects where they can make a real difference and inspire tomorrow's talent.</p>
 			</a>
 			<a href="{{siteUrl}}educators" class="signpost card-hover fade-in-animation">
-				<img src="{{siteUrl}}images/icons/graduation-hat.png">
+				<img src="{{siteUrl}}images/icons/graduation-hat.png" alt="Educators icon">
 				<h3 class="highlight-effect-pink">Educators</h3>
 				<p>We work with teachers, lecturers and early years educators to understand the curriculum they teach, and where Moray businesses can support.</p>
 			</a>
 			<a href="{{siteUrl}}young_people_&_parents" class="signpost card-hover fade-in-animation">
-				<img src="{{siteUrl}}images/icons/school.png">
+				<img src="{{siteUrl}}images/icons/school.png" alt="Young people icon">
 				<h3 class="highlight-effect-yellow">Young People</h3>
 				<p>We organise a range of events throughout the year to help young people and their parents understand the range of opportunities available.</p>
 			</a>
 			<a href="{{siteUrl}}young_people_&_parents" class="signpost card-hover fade-in-animation">
-				<img src="{{siteUrl}}images/icons/parents.png">
+				<img src="{{siteUrl}}images/icons/parents.png" alt="Parents icon">
 				<h3 class="highlight-effect-green">Parents</h3>
 				<p>We're passionate about the importance our work has on education, young people, and businesses.</p>
 			</a>
@@ -84,7 +84,7 @@
 				<div class="job-card card-hover fade-in-animation">
 					<h5>{{latestJobs[0].title}}</h5>
 					{% set image1 = latestJobs[0].image.one() %}
-					<img src="{{image1.url}}">
+					<img src="{{image1.url}}" alt="{{latestJobs[0].jobEmployer}}">
 					<div class="job-card-details">
 						<small>
 							<span>Contract:
@@ -125,7 +125,7 @@
 				<div class="job-card card-hover fade-in-animation">
 					<h5>{{latestJobs[1].title}}</h5>
 					{% set image2 = latestJobs[1].image.one() %}
-					<img src="{{image2.url}}">
+					<img src="{{image2.url}}" alt="{{latestJobs[1].jobEmployer}}">
 					<div class="job-card-details">
 						<small>
 							<span>Contract:
@@ -166,7 +166,7 @@
 				<div class="job-card card-hover fade-in-animation">
 					<h5>{{latestJobs[2].title}}</h5>
 					{% set image3 = latestJobs[2].image.one() %}
-					<img src="{{image3.url}}">
+					<img src="{{image3.url}}" alt="{{latestJobs[2].jobEmployer}}">
 					<div class="job-card-details">
 						<small>
 							<span>Contract:
@@ -213,7 +213,7 @@
 				<div class="career-story-group">
 					<div class="career-story-image card-hover fade-in-animation">
 						{% set careerStoryImage1 = careerStories[0].image.one() %}
-						<img src="{{careerStoryImage1.getUrl("careerStoryHomePageCard")}}">
+						<img src="{{careerStoryImage1.getUrl("careerStoryHomePageCard")}}" alt="{{careerStories[0].title}}">
 					</div>
 					<div class="career-story-text card-hover fade-in-animation">
 						<h5>{{careerStories[0].title}}</h5>
@@ -239,27 +239,43 @@
 					</div>
 					<div class="career-story-image card-hover fade-in-animation">
 						{% set careerStoryImage2 = careerStories[1].image.one() %}
-						<img src="{{careerStoryImage2.getUrl("careerStoryHomePageCard")}}">
+						<img src="{{careerStoryImage2.getUrl("careerStoryHomePageCard")}}" alt="{{careerStories[0].title}}">
 					</div>
 				</div>
 			{% endif %}
 		</div>
 	</section>
+	{% set otherPages = craft.entries.section("otherPages").all() %}
+	{% if otherPages|length > 0 %}
+		<section id="other-pages-section">
+			<h1>Other Pages</h1>
+			<div id="other-pages-container">
+				{% for page in otherPages %}
+					<div class="signpost card-hover fade-in-animation">
+						<a href={{page.url}}>
+							<h3>{{page.title}}</h3>
+							<p>{{page.pageDescription}}</p>
+						</a>
+					</div>
+				{% endfor %}
+			</div>
+		</section>
+	{% endif %}
 	<section id="get-in-touch-section">
 		<h2>Learn more and get in touch</h2>
 		<div id="get-in-touch-container">
 			<a href="{{siteUrl}}events" class="signpost card-hover fade-in-animation">
-				<img src="{{siteUrl}}images/icons/calendar.png">
+				<img src="{{siteUrl}}images/icons/calendar.png" alt="Events icon">
 				<h3 class="highlight-effect-pink">Events</h3>
 				<p>Stay up to date with DYW Moray news and events, and find out about some of the people we have worked with.</p>
 			</a>
 			<a href="{{siteUrl}}blog" class="signpost card-hover fade-in-animation">
-				<img src="{{siteUrl}}images/icons/content-writing.png">
-				<h3 class="highlight-effect-blue">Blog</h3>
+				<img src="{{siteUrl}}images/icons/content-writing.png" alt="Local stories icon">
+				<h3 class="highlight-effect-blue">Local Stories</h3>
 				<p>We're passionate about the impact our work has on education, young people, and businesses - and we can't stop talking about it!</p>
 			</a>
 			<a href="https://dywmoray.us14.list-manage.com/subscribe?u=1f7c9fcd6e5f65aaa681d7ac2&id=870f04e837" class="signpost card-hover fade-in-animation">
-				<img src="{{siteUrl}}images/icons/newsletter.png">
+				<img src="{{siteUrl}}images/icons/newsletter.png" alt="Newsletter icon">
 				<h3 class="highlight-effect-yellow">Newsletter</h3>
 				<p>Keep up to date with our news and events by signing up to our newsletter.</p>
 			</a>

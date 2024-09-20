@@ -85,17 +85,25 @@ small {
 
 /* Header: Mobile */
 header {
-    background-color: var(--white);
-    border-top: 1px solid var(--midGrey);
-    bottom: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0 5%;
+    pointer-events: none;
     position: fixed;
+    height: 100vh;
     width: 100%;
     z-index: 99;
+
+    .header-main {
+        background-color: var(--white);
+        border-top: 1px solid var(--midGrey);
+        bottom: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        padding: 0 12.5%;
+        pointer-events: all;
+        position: fixed;
+        width: 100%;
+    }
 
     #home-button {
         height: 40px;
@@ -110,22 +118,66 @@ header {
         cursor: pointer;
     }
 
+    #navbar-mobile-button {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        height: 80px;
+        justify-content: center;
+        width: 40px;
+
+        .navbar-mobile-button {
+            background-color: var(--darkBlue);
+            border-radius: 3px;
+            display: flex;
+            height: 6px;
+        }
+    }
+
+    #header-links-mobile {
+        display: none;
+    }
+
     #header-links-desktop {
         display: none;
     }
 
     a {
         color: var(--darkBlue);
-        font-size: 0.9rem;
+        font-size: 0.75rem;
         font-weight: bold;
         text-decoration: none;
         transition: all 0.25s;
     }
 }
 
+.mobile-expand {
+    background-color: var(--white);
+    height: 100vh;
+
+    .header-main {
+        top: 0;
+    }
+
+    #header-links-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 1.954em;
+        height: calc(100vh - 160px);
+        margin-top: 160px;
+        padding: 0 12.5%;
+        width: 75%;
+
+        a {
+            font-size: 1.954rem;
+            text-align: center;
+        }
+    }
+}
+
 /* Header: Tablet */
 @media screen and (min-width: 769px) {
-    header {
+    .header-main {
         border-bottom: 1px solid var(--midGrey);
         border-top: 0;
         bottom: auto;
@@ -136,8 +188,12 @@ header {
 }
 
 /* Header: Desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
     header {
+        #navbar-mobile-button {
+            display: none;
+        }
+
         #header-links-desktop {
             align-items: center;
             display: flex;

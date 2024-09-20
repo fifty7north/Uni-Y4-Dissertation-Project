@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: imageGallery
+instructions: null
+name: 'Image Gallery'
+searchable: false
+settings:
+  createButtonLabel: 'New image'
+  entryTypes:
+    - 4ff3144f-c5fc-425c-afee-31f089bfc112 # Image Gallery
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

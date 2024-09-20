@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  e6904972-050a-425a-8791-67e4e3b8731d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e3be8325-d5fa-4e85-b37b-e1ecd717de08
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4364835e-27cd-4e95-9744-9254e71d8929 # Text Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38b2ffc2-7593-4fb8-8552-c4d67fbd3d3b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a974274a-551b-48e1-ad0a-a5837245e97f
+        userCondition: null
+handle: extraPageTextSection
+hasTitleField: true
+icon: font-case
+name: 'Extra Page Text Section'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

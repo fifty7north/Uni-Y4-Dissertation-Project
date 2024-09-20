@@ -416,6 +416,55 @@
     }
 }
 
+/* Other Pages Section: Mobile */
+#other-pages-section {
+    background-color: var(--darkBlue);
+    padding: 0 12.5% 10vh 12.5%;
+
+    h1 {
+        color: var(--white);
+        margin-top: 0;
+    }
+
+    #other-pages-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1em;
+        width: 100%;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .signpost {
+        max-width: none;
+
+        h3 {
+            flex: 1 0 100%;
+            margin-top: 1em;
+            width: 100%;
+        }
+    }
+}
+
+/* Other Pages Section: Tablet and Desktop */
+@media screen and (min-width: 769px) {
+    #other-pages-section {
+
+        #other-pages-container {
+            flex-direction: row;
+        }
+
+        .signpost {
+            flex: 1 0 30%;
+            max-width: none;
+        }
+    }
+}
+
 /* Get in Touch Section: Mobile */
 #get-in-touch-section {
     margin-top: 10vh;

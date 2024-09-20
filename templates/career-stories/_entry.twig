@@ -10,7 +10,7 @@
 		<div id="blog-hero-image-container">
 			{% set image = entry.image.one() %}
 			<div id="blog-hero-image">
-				<img src="{{image.url}}" alt="">
+				<img src="{{image.url}}" alt="{{entry.title}}">
 			</div>
 		</div>
 	</section>

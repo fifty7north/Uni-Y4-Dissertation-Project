@@ -10,7 +10,7 @@
 		<div id="blog-hero-image-container">
 			{% set image = entry.image.one() %}
 			<div id="blog-hero-image">
-				<img src="{{image.url}}" alt="">
+				<img src="{{image.url}}" alt="{{entry.title}}">
 			</div>
 		</div>
 	</section>
@@ -18,5 +18,11 @@
 		<small>Published
 			{{entry.postDate|date("d M, Y")}}</small>
 		<p>{{entry.textContent|nl2br}}</p>
+	</section>
+	<section id="image-gallery">
+		{% set imageGallery = entry.imageGallery.all() %}
+		{% for image in imageGallery %}
+			<img src="{{image.image.one().url}}" alt="{{image.title}}" class="card-hover fade-in-animation">
+		{% endfor %}
 	</section>
 {% endblock %}

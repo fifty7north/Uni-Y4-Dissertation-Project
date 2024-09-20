@@ -1,0 +1,41 @@
+{% extends "index" %}
+{% do craft.app.view.registerCssFile('@web/css/otherPage.css') %}
+{# {% do craft.app.view.registerJsFile('@web/js/jobs.js') %} #}
+{% block content %}
+	<section id="other-page-hero">
+		<div id="other-page-hero-text">
+			<h1>{{entry.title}}</h1>
+			<p>{{entry.pageDescription}}</p>
+		</div>
+		<div id="other-page-hero-image-container">
+			{% set image = entry.heroImage.one() %}
+			<div id="other-page-hero-image">
+				<img src="{{image.url}}" alt="{{entry.title}} hero image">
+			</div>
+		</div>
+	</section>
+	<section id="page-content">
+		{% set pageContent = entry.pageContent.all() %}
+		{% for textSection in pageContent %}
+			<h2>{{textSection.title}}</h2>
+			<p>{{textSection.textContent}}</p>
+		{% endfor %}
+	</section>
+	<section id="image-gallery">
+		{% set imageGallery = entry.imageGallery.all() %}
+		{% for image in imageGallery %}
+			<img src="{{image.image.one().url}}" alt="{{image.title}}" class="card-hover fade-in-animation">
+		{% endfor %}
+	</section>
+	<section id="links-section">
+		{% set pageCards = entry.pageCards.all() %}
+		{% for card in pageCards %}
+			<div class="link-card card-hover fade-in-animation">
+				<a href={{card.pageLink}}>
+					<h3>{{card.title}}</h3>
+					<p>{{card.pageDescription}}</p>
+				</a>
+			</div>
+		{% endfor %}
+	</section>
+{% endblock %}

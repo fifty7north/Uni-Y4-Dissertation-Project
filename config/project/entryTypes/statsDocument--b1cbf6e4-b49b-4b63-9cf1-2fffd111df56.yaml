@@ -1,0 +1,50 @@
+color: blue
+fieldLayouts:
+  e6895adf-6c59-40de-8aff-95fd3d929981:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 39eb7593-5916-4e16-9671-f007c0c38f46
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cb895fc1-4891-41c7-b360-b42c66bf88fb
+        userCondition: null
+handle: statsDocument
+hasTitleField: true
+icon: chart-line
+name: 'Stats Document'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

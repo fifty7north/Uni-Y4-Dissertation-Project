@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: pageCards
+instructions: 'Cards for links to other pages at the bottom of the page'
+name: 'Page Cards'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - a9491314-f03c-4180-b22f-0c50b89685e6 # Other Page Card
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

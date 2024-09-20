@@ -1,4 +1,4 @@
-dateModified: 1715027777
+dateModified: 1718068009
 email:
   fromEmail: 14022526@uhi.ac.uk
   fromName: dyw-moray
@@ -16,33 +16,51 @@ meta:
     0f3b2b86-8a36-402a-a0a9-70aa5bdbae02: 'Blog Post' # Blog Post
     1d3be96d-37c7-45bb-8201-c702335312a8: 'DYW Event' # DYW Event
     02a816b7-a8ce-4f91-aaf0-4c23353533a6: 'Career Story Home Page Card' # Career Story Home Page Card
+    3d3e1b43-919d-4a21-b18e-3414b8f0a136: Profile # Profile
+    3d7ddbbd-b362-4bcf-8358-a68fe483742a: 'Extra Page Text Section' # Extra Page Text Section
     3f146f95-ab81-4766-a075-635a21dd4ad4: 'Job Contract Type' # Job Contract Type
     4bb70002-661b-4e95-92d2-8081dc9ae950: 'School Events' # School Events
+    4ff3144f-c5fc-425c-afee-31f089bfc112: 'Image Gallery' # Image Gallery
     07b8b5f8-be80-44e4-a388-e872ea527487: Blog # Blog
     8a9ea15a-9c9f-472d-b05d-77435c96a315: Job # Job
     8d6a0512-e6fb-42f8-8876-bbedad46af4a: 'Career Story' # Career Story
     16f5a7be-1e68-4bbb-9b9d-7ce29c39bd24: 'Job Salary' # Job Salary
+    18b5e96f-1c12-4289-95d2-5f2dc61b6175: News # News
     028b1118-ba6d-41fb-b83d-f7bed7b8974f: 'School Event' # School Event
+    34bd75f0-4d7e-4500-8c66-a6234b68b611: 'Extra Page' # Extra Page
     65a72e1a-e99f-46f6-90d7-c40cd610f9c7: 'Job Description' # Job Description
+    82fdc095-94d7-444d-a5ec-e20d37c30fd7: 'Team Members' # Team Members
     85c98157-bafd-409e-9a69-4128f398c4de: Image # Image
+    89fe4506-1cd8-482f-9801-4cb65cc5c3f9: 'Page Cards' # Page Cards
     345f52e6-3487-4fca-8f44-f58f33b2f978: Jobs # Jobs
     354beafa-235a-4551-8009-cf50ef5d3233: 'Event Link' # Event Link
     478a5207-7a2a-491c-bffa-817b075ad09a: Home # Home
+    500ccd67-4813-4305-ac3b-da9dda33ff97: 'Board Members' # Board Members
     768f1fcd-036a-43cf-9749-379c31a599c7: 'YPG Job Guarantee' # YPG Job Guarantee
+    857ea022-094f-4d0a-ae8a-cdd7a1715e90: 'Team Members' # Team Members
     05629c37-9cba-4fe7-8bdd-1be3c2b2de39: 'Event Description' # Event Description
     6532ab1c-d19d-42a4-b6c0-160b2ef6cf80: Images # Images
     13762a63-bef5-426a-890e-95ab817bc6e1: dyw-moray # dyw-moray
     55304e69-65f2-49fb-83e7-5c036bda33aa: 'DYW Events' # DYW Events
+    76590a9c-4d18-4ecd-8905-0e5661191d53: 'Other Pages' # Other Pages
+    158546e3-dcae-4107-b10f-8798fa3423b0: 'Stats Document' # Stats Document
+    243150d9-af70-48e8-a0da-a161f8be416c: 'Image Gallery' # Image Gallery
     4364835e-27cd-4e95-9744-9254e71d8929: 'Text Content' # Text Content
     9261989a-cfbe-4cb6-8f48-5e822c3eb651: dyw-moray # dyw-moray
     45903707-7ecb-4921-9218-da21e15c8878: 'Event Start Date' # Event Start Date
+    51284921-2bcd-4bbb-8dbd-1dd0f37bb920: 'Page Link' # Page Link
     a0533430-d17b-4d64-86a4-0cb6be15960b: 'Job Closing Date' # Job Closing Date
+    a9491314-f03c-4180-b22f-0c50b89685e6: 'Other Page Card' # Other Page Card
+    b1cbf6e4-b49b-4b63-9cf1-2fffd111df56: 'Stats Document' # Stats Document
     bfb0fc83-3061-4e34-a240-b12863fdd1f1: 'Career Stories' # Career Stories
     cd3e98a3-25dd-4cdc-8cee-62277f379922: Home # Home
     dbcdaa17-4f64-44de-961b-3b9fe310d7b1: 'Job Employer' # Job Employer
+    e8aeadf1-2859-4a57-876b-06021d7c5cff: 'Page Content' # Page Content
+    e1609898-3602-4d27-8852-680dd05680b4: 'Page Description' # Page Description
     eab664f3-4c66-4834-ad22-2d4fd4a76bb0: 'Job Link' # Job Link
     eee5b4f1-7c33-4df2-8d35-c275c4f7c4ea: 'Post Description' # Post Description
     f1b4f732-81b9-4b07-8034-b0e7696b1a7b: 'Event School' # Event School
+    fa1004b9-52f6-4cf8-8173-e2a5e34c8d0f: 'Hero Image' # Hero Image
     fe9247cf-052a-4a9e-835f-4725f296ac1d: 'Event End Date' # Event End Date
     fff31d1d-dbaf-41f0-8f31-36186988bb64: 'Job Location' # Job Location
 system:

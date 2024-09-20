@@ -7,7 +7,7 @@
 			<p>DYW Moray engages employers from across the region to make it easy to work with our college and schools and to provide more opportunities for young people to develop their employability skills. We would like all young people in Moray from the age of 3-24 years old to have some preparation for the world of work.</p>
 		</div>
 		<div id="hero-image-container">
-			<img src="{{siteUrl}}images/hero/employers-hero-image.svg" alt="" id="hero-image">
+			<img src="{{siteUrl}}images/hero/employers-hero-image.svg" alt="About page hero image" id="hero-image">
 		</div>
 	</section>
 	<section id="video-section">
@@ -20,7 +20,7 @@
 		<h2>Our goals</h2>
 		<div id="goals-list-container">
 			<div>
-				<img src="{{siteUrl}}images/hero/home-hero-image.svg">
+				<img src="{{siteUrl}}images/hero/home-hero-image.svg" alt="Image of people walking in a line">
 			</div>
 			<ul class="fade-in-animation" id="goals-list-employers">
 				<li>Facilitates business growth and sustainability</li>
@@ -33,8 +33,39 @@
 				<li>Contributes to corporate social responsibility</li>
 			</ul>
 			<div>
-				<img src="{{siteUrl}}images/hero/events-hero-image.svg">
+				<img src="{{siteUrl}}images/hero/events-hero-image.svg" alt="Image of presentation">
 			</div>
 		</div>
 	</section>
+	<section id="team-section">
+		<h2>Team Members</h2>
+		<div class="profiles-container">
+			{% set teamMembers = craft.entries.section("teamMembers").all() %}
+			{% for teamMember in teamMembers|reverse %}
+				<div class="profile card-hover fade-in-animation">
+					<img src="{{teamMember.image.one().url}}" alt={{teamMember.title}}>
+					<div>
+						<h3>{{teamMember.title}}</h3>
+						<p>{{teamMember.jobDescription|nl2br}}</p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+	<section id="board-section">
+		<h2>Board Members</h2>
+		<div class="profiles-container">
+			{% set boardMembers = craft.entries.section("boardMembers").all() %}
+			{% for boardMember in boardMembers|reverse %}
+				<div class="profile card-hover fade-in-animation">
+					<img src="{{boardMember.image.one().url}}" alt={{boardMember.title}}>
+					<div>
+						<h3>{{boardMember.title}}</h3>
+						<p>{{boardMember.jobDescription|nl2br}}</p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+
 {% endblock %}
