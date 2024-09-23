@@ -4,12 +4,13 @@ instructions: 'Select the closing date for job applications'
 name: 'Job Closing Date'
 searchable: false
 settings:
-  max: null
-  min: null
-  minuteIncrement: 30
-  showDate: true
-  showTime: false
-  showTimeZone: false
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Date
+type: craft\fields\PlainText

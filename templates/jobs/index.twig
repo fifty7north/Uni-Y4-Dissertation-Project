@@ -26,7 +26,7 @@
 	<section id="jobs-list">
 		{% set jobs = craft.entries.section("jobs").all() %}
 		{% if jobs|length > 0 %}
-			{% for job in jobs|sort((a, b) => a.jobClosingDate|date("Ymd") > b.jobClosingDate|date("Ymd")) %}
+			{% for job in jobs %}
 				<div class="job-card card-hover fade-in-animation">
 					{% if job.ypgJobGuarantee == true %}
 						<div class="ypg">YPG Guarantee</div>
@@ -54,10 +54,12 @@
 							<span>Location:
 							</span>
 							{{job.jobLocation}}</small>
-						<small>
-							<span>Closing Date:
-							</span>
-							{{job.jobClosingDate|date}}</small>
+						{% if job.jobClosingDate|length > 0 %}
+							<small>
+								<span>Closing Date:
+								</span>
+								{{job.jobClosingDate}}</small>
+						{% endif %}
 					</div>
 					<small class="job-card-description">{{job.jobDescription|nl2br}}</small>
 					<div class="job-card-buttons">

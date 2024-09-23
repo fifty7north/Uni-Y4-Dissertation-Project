@@ -132,10 +132,10 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 31ea3368-82a4-42da-bcb8-8a1c16f6ec93
+            uid: d83183a2-5483-4e15-b479-50c686ea00e6
             userCondition: null
             warning: null
             width: 100
