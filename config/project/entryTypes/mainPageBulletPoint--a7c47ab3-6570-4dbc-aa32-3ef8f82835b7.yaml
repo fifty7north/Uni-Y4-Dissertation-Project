@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  889d5d69-5da1-4e84-af6d-55025a7e8749:
+  c0164fda-bd28-41d5-8530-cbc19b954b98:
     tabs:
       -
         elementCondition: null
@@ -30,17 +30,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: a40f08e5-38f3-480b-978d-240570cfc59c
+            uid: 8e12e5c1-24e0-4d51-8d56-c70d7af3e818
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 88c19dd1-1d16-43a9-88ce-aea367e6ddfb
+        uid: 84b7e799-f91e-485c-931b-d4e3a82708df
         userCondition: null
-handle: employers
+handle: mainPageBulletPoint
 hasTitleField: true
 icon: ''
-name: Employers
+name: 'Main Page Bullet Point'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: mainPageBulletPoints
+instructions: null
+name: 'Main Page Bullet Points'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - a7c47ab3-6570-4dbc-aa32-3ef8f82835b7 # Main Page Bullet Point
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

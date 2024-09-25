@@ -53,13 +53,13 @@ fieldLayouts:
         uid: 6ca3de02-05bf-4777-a2ed-19ada96bdced
         userCondition: null
 handle: eventsPage
-hasTitleField: true
+hasTitleField: false
 icon: calendar
 name: 'Events Page'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: 'Events Page'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 95a83128-c2e7-4e4c-9598-73e0cad67ed9 # Employers
-handle: employers
+  - 95a83128-c2e7-4e4c-9598-73e0cad67ed9 # Employers Page
+handle: employersPage
 maxAuthors: 1
-name: Employers
+name: 'Employers Page'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
     enabledByDefault: true
     hasUrls: true
-    template: employers/_entry
+    template: employers/index.twig
     uriFormat: employers
 type: single

@@ -1,12 +1,12 @@
 columnSuffix: null
-handle: profile
+handle: mainPageCards
 instructions: null
-name: Profile
+name: 'Main Page Cards'
 searchable: false
 settings:
   createButtonLabel: null
   entryTypes:
-    - 1917324b-1d57-4b5c-beb9-b95130d0d1a2
+    - 6f92b32e-670d-4dd1-88e5-05e4043d96fb # Main Page Cards
   includeTableView: false
   maxEntries: null
   minEntries: null

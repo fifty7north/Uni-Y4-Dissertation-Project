@@ -11,63 +11,24 @@
 			<img src="{{siteUrl}}images/hero/employers-hero-image.svg" alt="Employers page hero image" id="hero-image">
 		</div>
 	</section>
+
+	{% set employersPageCards = craft.entries.section("employersPage").one() %}
+
 	<section id="get-involved-section">
 		<h2>How to get involved</h2>
 		<div class="get-involved-cards">
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/employers/Employer-Page-Work-related-experiences.jpg" alt="Offer Work Related Learning Experiences">
+			{% for card in employersPageCards.mainPageCards %}
+				<div class="get-involved-card card-hover fade-in-animation">
+					<div class="get-involved-card-image">
+						{% set image = card.image.one() %}
+						<img src="{{image.url}}" alt="{{card.title}}">
+					</div>
+					<div class="get-involved-card-text">
+						<h5>{{card.title}}</h5>
+						<p>{{card.textContent}}</p>
+					</div>
 				</div>
-				<div class="get-involved-card-text">
-					<h5>Offer Work Related Learning Experiences</h5>
-					<p>Could you offer work experience, a workplace visit, or give a career talk? Work-related learning experiences are vital for inspiring the next generation of employees. Drop us a line to let us know what your business could offer.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/employers/Employer-Page-Run-a-Project.jpg" alt="Run a project with DYW Moray's support">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Run a project with DYW Moray's support</h5>
-					<p>Already got an innovative idea you want to pilot? A project given to pupils to work on with an employer can significantly develop their employability skills. Find out how we can help.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/employers/Employer-Page-Partner-with-a-School-or-College.jpg" alt="Partner with a school or UHI Moray">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Partner with a School or UHI Moray</h5>
-					<p>Partnering with local schools and colleges allows a common understanding to be developed about what skills and experiences young people require to be successful in the world of work. Read about some of our Case Studies with Education.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/employers/Employer-Page-Industry-Ambassador.jpg" alt="Become an Industry Ambassador">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Become an Industry Ambassador</h5>
-					<p>Are you bursting with pride about your industry and keen to share your passion with potential future recruits? DYW Moray needs Industry Ambassadors to act as a point of contact for their industry to offer support and guidance to those in education.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/employers/P1000337-2.jpg" alt="Recruit an Apprentice">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Recruit an Apprentice</h5>
-					<p>Hiring an apprentice can reduce your recruitment costs, plug skills gaps, and increase productivity. DYW Moray and partners aim to increase the number of employers recruiting apprentices, and we are here to support you on your journey.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/employers/baxters-fochabers-9.jpg" alt="Volunteer to become a Mentor">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Volunteer to become a Mentor</h5>
-					<p>Mentoring can transform young people's lives as they get the chance to speak to a professional one-to-one who is outwith their household and school. There are two fantastic mentoring programmes in Moray: Career Ready and Mentoring Young Talent.</p>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
 	</section>
 	<section id="benefits-section">
@@ -77,14 +38,9 @@
 				<img src="{{siteUrl}}images/hero/jobs-hero-plants.svg" alt="Man helping girl in wheelchair">
 			</div>
 			<ul class="fade-in-animation" id="benefits-list-employers">
-				<li>Facilitates business growth and sustainability</li>
-				<li>Raises company and industry profile</li>
-				<li>Develops and energises staff</li>
-				<li>Supports with succession planning</li>
-				<li>Help give something back</li>
-				<li>Streamlines recruitment process</li>
-				<li>Creates a talent pipeline into the industry</li>
-				<li>Contributes to corporate social responsibility</li>
+				{% for entry in employersPageCards.mainPageBulletPoints %}
+					<li>{{entry.title}}</li>
+				{% endfor %}
 			</ul>
 			<div>
 				<img src="{{siteUrl}}images/hero/educators-hero-image.svg" alt="Employer giving students presentation">
