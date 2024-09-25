@@ -1,4 +1,4 @@
-color: null
+color: red
 fieldLayouts:
   51caacc1-fbf0-4ba9-bcbd-248f08c7435c:
     tabs:
@@ -34,13 +34,43 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 247a959a-dc9f-4fd9-916a-e55c618fabf4 # Main Page Cards
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a069b9ac-8c07-4788-b6d8-db6ee489b4de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b2ea906-16cc-439e-a93c-f8d05e0f89a6 # Main Page Bullet Points
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 306c0b06-96d3-4741-b207-cd2840465fbd
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 6b3e5476-d30c-4498-8fc7-96b8eb12ad6a
         userCondition: null
-handle: educators
+handle: educatorsPage
 hasTitleField: true
-icon: ''
-name: Educators
+icon: graduation-cap
+name: 'Educators Page'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 6e6e9cd9-afc3-4c03-ba3e-0f238234b2be # Educators
-handle: educators
+  - 6e6e9cd9-afc3-4c03-ba3e-0f238234b2be # Educators Page
+handle: educatorsPage
 maxAuthors: 1
-name: Educators
+name: 'Educators Page'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
     enabledByDefault: true
     hasUrls: true
-    template: educators/_entry
+    template: educators/index.twig
     uriFormat: educators
 type: single
