@@ -12,85 +12,24 @@
 			<img src="{{siteUrl}}images/hero/young-people-and-parents-hero-image.svg" alt="Young people & parents hero image" id="hero-image">
 		</div>
 	</section>
+
+	{% set youngPeopleParentsPageCards = craft.entries.section("youngPeopleParentsPage").one() %}
+
 	<section id="get-involved-section">
 		<h2>How we can help young people</h2>
 		<div class="get-involved-cards">
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/young_people_&_parents/Skills-Development.jpg" alt="Skills Development">
+			{% for card in youngPeopleParentsPageCards.mainPageCards %}
+				<div class="get-involved-card card-hover fade-in-animation">
+					<div class="get-involved-card-image">
+						{% set image = card.image.one() %}
+						<img src="{{image.url}}" alt="{{card.title}}">
+					</div>
+					<div class="get-involved-card-text">
+						<h5>{{card.title}}</h5>
+						<p>{{card.textContent}}</p>
+					</div>
 				</div>
-				<div class="get-involved-card-text">
-					<h5>Skills Development</h5>
-					<p>We aim to give you more opportunities to learn and develop your skills for work. Soft skills such as resilience, communication and teamwork are a few of the many skills that employers are looking for.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/young_people_&_parents/Experience.jpg" alt="Experience">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Experience</h5>
-					<p>Real life experiences of the world of work will allow you to learn more about yourself, test what your career interests are what is expected of you in the workplace.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/young_people_&_parents/Confidence.jpg" alt="Confidence">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Confidence</h5>
-					<p>Building your confidence with CVs, interviews and experience in the workplace with employers.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/young_people_&_parents/Career-Choices.jpg" alt="Career Choices">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Career Choices</h5>
-					<p>Information from employers and inspiration around career choices will open your eyes to the opportunities that are on your doorstep.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/young_people_&_parents/Qualifications.jpg" alt="Qualifications">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Qualifications</h5>
-					<p>Developing and achieving recognised qualifications. There are so many qualifications that are available for you to explore.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/young_people_&_parents/Finding-a-Job.jpg" alt="Finding a Job">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Finding a Job</h5>
-					<p>Providing information to help you find a job and a career. Our jobs page lists opportunities that are available in Moray that are suitable for young people.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/young_people_&_parents/Entrepreneurial-Skills.jpg" alt="Entrepreneurial Skills">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>Entrepreneurial Skills</h5>
-					<p>Offering you more opportunities to develop your entrepreneurial skills, especially if you are interested in starting up your own business. We can also help point you in the right direction for guidance and support for a start-up business.</p>
-				</div>
-			</div>
-			<div class="get-involved-card card-hover fade-in-animation">
-				<div class="get-involved-card-image">
-					<img src="{{siteUrl}}images/young_people_&_parents/School-Leaver.jpg" alt="School Leavers">
-				</div>
-				<div class="get-involved-card-text">
-					<h5>School Leavers</h5>
-					<p>Leaving school? There's lots of support out there, but we know it can be tricky to find information you need, at the right time. We can link you to resources to help support you during this important peroid, such as this
-						<span>
-							<a href="https://www.myworldofwork.co.uk/schoolleaverstoolkit">school leavers toolkit.</a>
-						</span>
-					</p>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
 	</section>
 	<section id="benefits-section">
@@ -100,11 +39,9 @@
 				<img src="{{siteUrl}}images/hero/blog-hero-image.svg" alt="Lady looking at stats">
 			</div>
 			<ul class="fade-in-animation" id="benefits-list-parents">
-				<li>The benefits of work-based learning</li>
-				<li>The importance and relevance of apprenticeships</li>
-				<li>Growing industry sectors and career opportunities</li>
-				<li>Employer involvement with local schools and colleges</li>
-				<li>Local career opportunities</li>
+				{% for entry in youngPeopleParentsPageCards.mainPageBulletPoints %}
+					<li>{{entry.title}}</li>
+				{% endfor %}
 			</ul>
 			<div>
 				<img src="{{siteUrl}}images/hero/jobs-hero-whiteboard.svg" alt="Man helping girl in wheelchair">

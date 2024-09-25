@@ -1,4 +1,4 @@
-color: null
+color: red
 fieldLayouts:
   2f29f2a2-284f-49a0-9157-d716eda21caf:
     tabs:
@@ -37,10 +37,10 @@ fieldLayouts:
         name: Content
         uid: dc19c931-fa7b-4546-a1f7-c61a068d52ff
         userCondition: null
-handle: aboutUs
+handle: aboutUsPage
 hasTitleField: true
-icon: ''
-name: 'About Us'
+icon: circle-info
+name: 'About Us Page'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

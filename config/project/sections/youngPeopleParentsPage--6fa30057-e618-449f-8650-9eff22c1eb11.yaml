@@ -2,9 +2,9 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   - 6701f9b9-7b95-4267-9a76-0b63f97e4d26 # Young People & Parents
-handle: youngPeopleParents
+handle: youngPeopleParentsPage
 maxAuthors: 1
-name: 'Young People & Parents'
+name: 'Young People & Parents Page'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
     enabledByDefault: true
     hasUrls: true
-    template: young-people-parents/_entry
-    uriFormat: young-people-parents
+    template: 'young_people_&_parents/index.twig'
+    uriFormat: 'young_people_&_parents'
 type: single

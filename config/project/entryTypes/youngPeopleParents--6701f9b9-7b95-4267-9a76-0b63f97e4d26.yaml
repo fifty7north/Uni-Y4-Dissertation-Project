@@ -1,4 +1,4 @@
-color: null
+color: red
 fieldLayouts:
   6d3021b9-5a00-4c4c-b134-2a4857dcf674:
     tabs:
@@ -34,12 +34,42 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 247a959a-dc9f-4fd9-916a-e55c618fabf4 # Main Page Cards
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee57635c-7477-465a-bfd6-a3aca25f3a35
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b2ea906-16cc-439e-a93c-f8d05e0f89a6 # Main Page Bullet Points
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb25c573-360e-4191-905b-c82299a69a3c
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: befa78b3-1cd5-4f81-acc2-c7d333cffac1
         userCondition: null
 handle: youngPeopleParents
 hasTitleField: true
-icon: ''
+icon: family
 name: 'Young People & Parents'
 showSlugField: true
 showStatusField: true
