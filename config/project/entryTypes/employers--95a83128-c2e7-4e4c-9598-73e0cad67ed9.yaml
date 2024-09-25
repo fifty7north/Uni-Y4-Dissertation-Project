@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  889d5d69-5da1-4e84-af6d-55025a7e8749:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a40f08e5-38f3-480b-978d-240570cfc59c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 88c19dd1-1d16-43a9-88ce-aea367e6ddfb
+        userCondition: null
+handle: employers
+hasTitleField: true
+icon: ''
+name: Employers
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

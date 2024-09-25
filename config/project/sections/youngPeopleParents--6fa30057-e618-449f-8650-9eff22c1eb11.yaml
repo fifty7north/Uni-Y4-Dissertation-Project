@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 6701f9b9-7b95-4267-9a76-0b63f97e4d26 # Young People & Parents
+handle: youngPeopleParents
+maxAuthors: 1
+name: 'Young People & Parents'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: young-people-parents/_entry
+    uriFormat: young-people-parents
+type: single

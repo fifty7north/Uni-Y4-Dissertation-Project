@@ -65,36 +65,39 @@
 
 				{# Events for all schools #}
 
-				<div class="school-events-category">
-					<h4>All Schools</h4>
-					{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
-						{% if event.eventSchool == "all" %}
-							<div class="event-card card-hover fade-in-animation">
-								<small>
-									{{event.eventStartDate|date("jS M, Y")}}
-									{% if event.eventEndDate %}
-										-
-										{{event.eventEndDate|date("jS M, Y")}}
-									{% endif %}
-								</small>
-								<h5>{{event.title}}</h5>
-								<small class="event-card-description">{{event.eventDescription|nl2br}}</small>
-								<div class="event-card-buttons">
-									<div class="button">
-										<a href="{{event.eventLink}}" class="button-main primary-button">Sign up</a>
-										<div class="button-accent-1"></div>
-										<div class="button-accent-2"></div>
-									</div>
-									<div class="button">
-										<a class="button-main secondary-button event-card-description-button">View More</a>
-										<div class="button-accent-1"></div>
-										<div class="button-accent-2"></div>
+				{% set eventsPage = craft.entries.section("eventsPage").one() %}
+				{% if eventsPage.allSchoolsToggle == true %}
+					<div class="school-events-category">
+						<h4>All Schools</h4>
+						{% for event in schoolEvents|sort((a, b) => a.eventStartDate|date("Ymd") > b.eventStartDate|date("Ymd")) %}
+							{% if event.eventSchool == "all" %}
+								<div class="event-card card-hover fade-in-animation">
+									<small>
+										{{event.eventStartDate|date("jS M, Y")}}
+										{% if event.eventEndDate %}
+											-
+											{{event.eventEndDate|date("jS M, Y")}}
+										{% endif %}
+									</small>
+									<h5>{{event.title}}</h5>
+									<small class="event-card-description">{{event.eventDescription|nl2br}}</small>
+									<div class="event-card-buttons">
+										<div class="button">
+											<a href="{{event.eventLink}}" class="button-main primary-button">Sign up</a>
+											<div class="button-accent-1"></div>
+											<div class="button-accent-2"></div>
+										</div>
+										<div class="button">
+											<a class="button-main secondary-button event-card-description-button">View More</a>
+											<div class="button-accent-1"></div>
+											<div class="button-accent-2"></div>
+										</div>
 									</div>
 								</div>
-							</div>
-						{% endif %}
-					{% endfor %}
-				</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+				{% endif %}
 
 				{# Events for UHI Moray #}
 

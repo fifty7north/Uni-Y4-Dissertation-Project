@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 6e4fd014-1192-4960-96d9-0878ebadf994 # About Us
+handle: aboutUs
+maxAuthors: 1
+name: 'About Us'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: about-us/_entry
+    uriFormat: about-us
+type: single

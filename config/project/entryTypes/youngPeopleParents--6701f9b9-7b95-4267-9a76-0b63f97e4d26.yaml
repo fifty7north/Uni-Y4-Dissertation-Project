@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  6d3021b9-5a00-4c4c-b134-2a4857dcf674:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ac04d336-740f-4c8a-9ffd-75f8e7963103
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: befa78b3-1cd5-4f81-acc2-c7d333cffac1
+        userCondition: null
+handle: youngPeopleParents
+hasTitleField: true
+icon: ''
+name: 'Young People & Parents'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

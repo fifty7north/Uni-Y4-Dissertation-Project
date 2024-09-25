@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - b26ff6de-f59d-49ad-b40e-fd8c59d0f961 # Events Page
+handle: eventsPage
+maxAuthors: 1
+name: 'Events Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: events/index.twig
+    uriFormat: events
+type: single

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 95a83128-c2e7-4e4c-9598-73e0cad67ed9 # Employers
+handle: employers
+maxAuthors: 1
+name: Employers
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  13762a63-bef5-426a-890e-95ab817bc6e1: # dyw-moray
+    enabledByDefault: true
+    hasUrls: true
+    template: employers/_entry
+    uriFormat: employers
+type: single

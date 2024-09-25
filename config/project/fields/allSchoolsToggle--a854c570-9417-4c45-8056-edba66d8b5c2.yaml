@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: allSchoolsToggle
+instructions: 'Show/hide the ''All Schools'' category'
+name: 'All Schools Toggle'
+searchable: false
+settings:
+  default: false
+  offLabel: Hide
+  onLabel: Show
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

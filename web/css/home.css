@@ -230,7 +230,7 @@
 
 #stat3 {
     .faded-in {
-        --stat3: 20;
+        --stat3: 20000;
     }
 }
 
